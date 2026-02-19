@@ -1,0 +1,27 @@
+
+svg div { display: flex; align-items: center; justify-content: center; height: 100%;}
+svg p { margin: 0; font-size: 12px; color: black; line-height: 1.2em;}
+svg .title { font-size: 24px; font-weight: bold; color: blue;}
+svg .text { display: flex; align-items: left; justify-content: left; height: 100%;}
+svg .bold { color: blue; font-weight: bold;}
+
+svg .box1 { fill: lightblue; stroke: blue;}
+svg .box2 { fill: lightcoral; stroke: red;}
+svg .box3 { fill: lightgreen; stroke: green;}
+svg .box4 { fill: wheat; stroke: black;}
+svg .box5 { fill: gray; stroke: black;}
+
+svg .arrow1 { stroke: blue; fill: white; stroke-width: 2px; marker-end: url(#arrow1);}
+svg .arrow2 { stroke: red; fill: white; stroke-width: 2px; marker-end: url(#arrow2);}
+svg .arrow3 { stroke: green; fill: white; stroke-width: 2px; marker-end: url(#arrow3);}
+svg .arrow4 { stroke: black; fill: white; stroke-width: 2px; marker-end: url(#arrow4);}
+
+svg .line1 { stroke: blue; fill: white; stroke-width: 2px;}
+svg .line2 { stroke: red; fill: white; stroke-width: 2px;}
+svg .line3 { stroke: green; fill: white; stroke-width: 2px;}
+svg .line4 { stroke: black; fill: white; stroke-width: 2px;}
+
+svg .fill1 { fill: blue;}
+svg .fill2 { fill: red;}
+svg .fill3 { fill: green;}
+svg .fill4 { fill: black;}
