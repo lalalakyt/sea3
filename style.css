@@ -457,14 +457,14 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .Table08 > .List08[cityFilter="1"] > div:nth-child(29) { text-align: center; padding-left: 2px; border-right: 1px solid #d6cdcd; grid-column: 26 / span 2;}
 .Table08 > .List08[cityFilter="1"] > div:nth-child(30) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
 
-.Table08 .city0 { font-size: 10pt;}
-.Table08 .city1 { font-size: 10pt; color: red;}
-.Table08 .city2 { font-size: 10pt; color: blue;}
-.Table08 .city3 { font-size: 10pt; color: green;}
+.Table08 .city0 { font-size: 12pt;}
+.Table08 .city1 { font-size: 12pt; color: red;}
+.Table08 .city2 { font-size: 12pt; color: blue;}
+.Table08 .city3 { font-size: 12pt; color: green;}
 
-.Table08 .city12 { font-size: 10pt; color: red;}
+.Table08 .city12 { font-size: 12pt; color: red;}
 .Table08 .city12:hover { color: blue;}
-.Table08 .city32 { font-size: 10pt; color: green;}
+.Table08 .city32 { font-size: 12pt; color: green;}
 .Table08 .city32:hover { color: blue;}
 
 .Header08 > .List08 label { background-color: #2ba6cb; color: black;}
