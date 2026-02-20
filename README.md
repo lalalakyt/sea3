@@ -14,6 +14,7 @@
     <li>我的其中一次遊戲的歷程記錄。</li>
   </ul>
 </div>
+<div>且設定資料都用表格方式呈現，還有篩選功能，方便好查。</div><br/>
 <div>網頁內容由 HTML + Pure CSS 所構成。包含以下檔案：</div><br/>
 <table>
   <tr><td>sea3.htm</td><td>所有的資料內容</td></tr>
