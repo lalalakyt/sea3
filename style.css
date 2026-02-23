@@ -3603,8 +3603,35 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 .Table67 > .List67 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
 
 
-/* 68 (tab-67sub03). 戰鬥->陸戰兵種 */
+/* 68 (tab-67sub02). 戰鬥->陸戰 */
 .List68 {
+  display: grid;
+  grid-template-columns: 34em 4em 4em 4em 4em;
+  grid-column-gap: 0;
+  padding-left: 2px;
+  border: 1px solid #d6cdcd;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 1.5em;
+  width: 50em;
+}
+.Header68 > .List68 { background-color: #e6f9ff; font-weight: bold;}
+.Header68 > .List68 > div { padding-left: 3px;}
+.Header68 > .List68 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
+.Header68 > .List68 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
+.Header68 > .List68 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
+.Header68 > .List68 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
+
+.Table68 > .List68:nth-child(n) { background-color: #eeeeee;}
+.Table68 > .List68:nth-child(2n-1) { background-color: #ffffff;}
+.Table68 > .List68 > div:nth-child(1) { text-align: left; padding: 3px; border-right: 1px solid #d6cdcd;}
+.Table68 > .List68 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
+.Table68 > .List68 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
+.Table68 > .List68 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
+
+
+/* 69 (tab-67sub03). 戰鬥->陸戰兵種 */
+.List69 {
   display: grid;
   grid-template-columns: 2em 6em 6em 6em 5em 33em 15.5em;
   grid-column-gap: 0;
@@ -3615,29 +3642,29 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   line-height: 1.5em;
   width: 73.5em;
 }
-.Header68 > .List68 { background-color: #e6f9ff; font-weight: bold;}
-.Header68 > .List68 > div { padding-left: 3px;}
-.Header68 > .List68 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
-.Header68 > .List68 > div:nth-child(2) { border-right: 1px solid #d6cdcd; grid-column: 2 / span 3;}
-.Header68 > .List68 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
-.Header68 > .List68 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
+.Header69 > .List69 { background-color: #e6f9ff; font-weight: bold;}
+.Header69 > .List69 > div { padding-left: 3px;}
+.Header69 > .List69 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
+.Header69 > .List69 > div:nth-child(2) { border-right: 1px solid #d6cdcd; grid-column: 2 / span 3;}
+.Header69 > .List69 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
+.Header69 > .List69 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
 
-.Table68 { margin-bottom: 0.5em;}
-.Table68 > .List68:nth-child(n) { background-color: #eeeeee;}
-.Table68 > .List68:nth-child(2n-1) { background-color: #ffffff;}
-.Table68 > .List68 > div:nth-child(1) { text-align: right; padding-right: 5px; border-right: 1px solid #d6cdcd;}
-.Table68 > .List68 > div:nth-child(2) { padding: 3px;}
-.Table68 > .List68 > div:nth-child(3) { padding: 3px;}
-.Table68 > .List68 > div:nth-child(4) { padding: 3px; border-right: 1px solid #d6cdcd;}
-.Table68 > .List68 > div:nth-child(5) { padding-left: 3px; border-right: 1px solid #d6cdcd;}
-.Table68 > .List68 > div:nth-child(6) { padding-left: 3px; border-right: 1px solid #d6cdcd;}
-.Table68 > .List68 > div:nth-child(7) { padding-left: 3px;}
+.Table69 { margin-bottom: 0.5em;}
+.Table69 > .List69:nth-child(n) { background-color: #eeeeee;}
+.Table69 > .List69:nth-child(2n-1) { background-color: #ffffff;}
+.Table69 > .List69 > div:nth-child(1) { text-align: right; padding-right: 5px; border-right: 1px solid #d6cdcd;}
+.Table69 > .List69 > div:nth-child(2) { padding: 3px;}
+.Table69 > .List69 > div:nth-child(3) { padding: 3px;}
+.Table69 > .List69 > div:nth-child(4) { padding: 3px; border-right: 1px solid #d6cdcd;}
+.Table69 > .List69 > div:nth-child(5) { padding-left: 3px; border-right: 1px solid #d6cdcd;}
+.Table69 > .List69 > div:nth-child(6) { padding-left: 3px; border-right: 1px solid #d6cdcd;}
+.Table69 > .List69 > div:nth-child(7) { padding-left: 3px;}
 
-.Table68 > .List68 > div:nth-child(2) > img { width: 90px;}
-.Table68 > .List68 > div:nth-child(3) > img { width: 90px;}
-.Table68 > .List68 > div:nth-child(4) > img { width: 90px;}
+.Table69 > .List69 > div:nth-child(2) > img { width: 90px;}
+.Table69 > .List69 > div:nth-child(3) > img { width: 90px;}
+.Table69 > .List69 > div:nth-child(4) > img { width: 90px;}
 
-.List68a {
+.List69a {
   display: grid;
   grid-template-columns: 4em 20em;
   grid-column-gap: 0;
@@ -3648,10 +3675,10 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   line-height: 1.5em;
   width: 24em;
 }
-.Table68 > .List68a > div { padding-left: 3px;}
-.Table68 > .List68a:nth-child(n) { background-color: #eeeeee;}
-.Table68 > .List68a:nth-child(2n-1) { background-color: #ffffff;}
-.Table68 > .List68a > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
+.Table69 > .List69a > div { padding-left: 3px;}
+.Table69 > .List69a:nth-child(n) { background-color: #eeeeee;}
+.Table69 > .List69a:nth-child(2n-1) { background-color: #ffffff;}
+.Table69 > .List69a > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
 
 
 /* ------------------------------ */
