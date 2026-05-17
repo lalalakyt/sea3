@@ -18,7 +18,8 @@
 <div>且設定資料都用表格方式呈現，還有篩選功能，方便好查。</div><br/>
 <div>網頁內容由 HTML + Pure CSS 所構成。包含以下檔案：</div><br/>
 <table>
-  <tr><td>sea3.htm</td><td>所有的資料內容</td></tr>
+  <tr><td>sea3.htm</td><td>資料內容</td></tr>
+  <tr><td>sea3record.htm</td><td>遊戲紀錄</td></tr>
   <tr><td>style.css</td><td>網頁排版用的樣式表</td></tr>
   <tr><td>svg.css</td><td>向量圖使用的樣式表</td></tr>
   <tr><td>pic/</td><td>所有的圖檔</td></tr>
