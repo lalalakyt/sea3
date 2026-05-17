@@ -142,10 +142,10 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 
 /* ------------------------------ */
-/* B. Title */
+/* B. Title & Change html page */
 .titleDiv {
   display: grid;
-  grid-template-columns: 9.2em 1fr 8em;
+  grid-template-columns: 10.2em 1fr 7.5em;
   grid-column-gap: 0;
   padding: 0;
   margin: 0;
@@ -153,10 +153,27 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   font-size: 18pt;
   text-align: left;
   padding-left: 12px;
+  width: 1270px;
 }
 .titleDiv > div:nth-child(1) { font-size: 18pt; font-weight: bolder; grid-row: 1 / span 2;}
 .titleDiv > div:nth-child(4) { font-size: 10pt; padding: 0; margin: 0;}
 .titleDiv > div:nth-child(5) { font-size: 10pt; padding: 0; margin: 0;}
+
+.SwitchPage {
+  position: absolute;
+  top: 33px;
+  left: 1196px;
+  background-color: #2ba6cb;
+  padding: 0.3em 0.3em;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  order: 0;
+  font-size: 11pt;
+}
+.SwitchPage a { text-decoration: none; color: black;}
+.SwitchPage a:hover { text-decoration: none; color: white;}
 
 
 /* ------------------------------ */
@@ -269,7 +286,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* ------------------------------ */
 /* F. 通用的List */
-.ListA1, .ListA2, .ListA3, .ListA4 {
+.ListA1, .ListA2, .ListA3, .ListA4, .ListA5 {
   display: grid;
   grid-column-gap: 0;
   padding-left: 0;
@@ -283,7 +300,9 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .ListA2 { grid-template-columns: 2em 9em; width: 11em;}
 .ListA3 { grid-template-columns: 10em 14em; width: 24em;}
 .ListA4 { grid-template-columns: 6em 44em; width: 50em;}
-.ListA1 > div, .ListA2 > div, .ListA3 > div, .ListA4 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
+.ListA5 { grid-template-columns: 3em 8em 8em; width: 19em;}
+.ListA1 > div, .ListA2 > div, .ListA3 > div, .ListA4 > div, .ListA5 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
+.ListA5 > div { text-align: center;}
 
 .TableA { margin-bottom: 1em;}
 .TableA > div:nth-child(n) { background-color: #dddddd;}
