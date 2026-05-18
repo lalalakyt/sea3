@@ -3583,7 +3583,7 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 
 
 /* ------------------------------ */
-/* 65 (tab-65sub04). 地圖->伊比利半島 */
+/* 65 (tab-65sub05). 地圖->伊比利半島 */
 .List65 {
   display: grid;
   grid-template-columns: 680px 1fr;
