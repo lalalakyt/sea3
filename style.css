@@ -1,5 +1,7 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
+  --lastUpdateDate: "2026/05/19"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
+  
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
   
@@ -44,7 +46,43 @@
 
 
 /* ------------------------------ */
-/* A. General */
+/* A. Title & Change html page */
+.titleDiv {
+  display: grid;
+  grid-template-columns: 10.2em 1fr 7.5em;
+  grid-column-gap: 0;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 18pt;
+  text-align: left;
+  padding-left: 12px;
+  width: 1270px;
+}
+.titleDiv > div:nth-child(1) { font-size: 18pt; font-weight: bolder; grid-row: 1 / span 2;}
+.titleDiv > div:nth-child(4) { font-size: 10pt; padding: 0; margin: 0;}
+.titleDiv > div:nth-child(5) { font-size: 10pt; padding: 0; margin: 0;}
+.titleDiv > div:nth-child(5):after { content: var(--lastUpdateDate);}
+
+.SwitchPage {
+  position: absolute;
+  top: 33px;
+  left: 1196px;
+  background-color: #2ba6cb;
+  padding: 0.3em 0.3em;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  order: 0;
+  font-size: 11pt;
+}
+.SwitchPage a { text-decoration: none; color: black;}
+.SwitchPage a:hover { text-decoration: none; color: white;}
+
+
+/* ------------------------------ */
+/* B. General */
 * { font-family: 'Heiti TC', 'PingFang TC', '微軟正黑體', sans-serif;}
 p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
@@ -139,41 +177,6 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .aRemoveUnderLine a:hover { text-decoration: none; color: #039BE5;}
 
 .text-justify > div { text-align: justify; padding-right: 1em;}
-
-
-/* ------------------------------ */
-/* B. Title & Change html page */
-.titleDiv {
-  display: grid;
-  grid-template-columns: 10.2em 1fr 7.5em;
-  grid-column-gap: 0;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  font-size: 18pt;
-  text-align: left;
-  padding-left: 12px;
-  width: 1270px;
-}
-.titleDiv > div:nth-child(1) { font-size: 18pt; font-weight: bolder; grid-row: 1 / span 2;}
-.titleDiv > div:nth-child(4) { font-size: 10pt; padding: 0; margin: 0;}
-.titleDiv > div:nth-child(5) { font-size: 10pt; padding: 0; margin: 0;}
-
-.SwitchPage {
-  position: absolute;
-  top: 33px;
-  left: 1196px;
-  background-color: #2ba6cb;
-  padding: 0.3em 0.3em;
-  color: #ccc;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  order: 0;
-  font-size: 11pt;
-}
-.SwitchPage a { text-decoration: none; color: black;}
-.SwitchPage a:hover { text-decoration: none; color: white;}
 
 
 /* ------------------------------ */
