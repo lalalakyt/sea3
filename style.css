@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/05/19"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
+  --lastUpdateDate: "2026/05/24"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -108,7 +108,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 .textA  { font-size: 10pt; padding: 0em 0em 0.5em 1em;}
 .textA2 { font-size: 10pt; padding: 0em 0em 0.5em 3em;}
-.textB  { font-size: 10pt; padding: 0em 0em 0.5em 1em; padding-top: 0.5em;}
+.textB  { font-size: 10pt; padding: 0.5em 0em 0.5em 1em;}
 
 /*
   text後面的數字表示左邊空多少em；
@@ -313,7 +313,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* 對話的圖片 */
 .TableB { display: grid; grid-template-columns: 1fr 1fr;}
-.ListB { padding-top: 5px;}
+.ListB { font-size: 12pt; padding-top: 5px;}
 .ListB > div { padding-left: 5px; height: 175px;}
 .ListB > div.text { padding-left: 5px; height: 24px; font-weight: bold; color: #4aa;}
 .ListB img { width: 608px;}
@@ -405,6 +405,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   grid-row-gap: 0px;
   padding: 4px 0 0 5px;
   border-bottom: 2px solid #d6cdcd;
+  font-size: 12pt;
 }
 .Table07 > div { padding: 2px 0 0 3px;}
 .List07 {
