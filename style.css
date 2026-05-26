@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/05/24"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
+  --lastUpdateDate: "2026/05/26"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -39,14 +39,14 @@
   --Table72Height: 598.5px; /* 船艦->出場年代 */
   --Table86Height: 626px;   /* 其他->孩子的能力值 & 玩家的能力值 */
   
-  --Table94Height: 632px;   /* 遊戲紀錄 */
+  --Table94Height: 631px;   /* 遊戲紀錄 */
   --Table97Height: 651px;   /* 關於->更新紀錄 */
   --Table98Height: 601px;   /* 關於->內容架構 */
 }
 
 
 /* ------------------------------ */
-/* A. Title & Change html page */
+/* A. Title */
 .titleDiv {
   display: grid;
   grid-template-columns: 10.2em 1fr 7.5em;
@@ -63,22 +63,6 @@
 .titleDiv > div:nth-child(4) { font-size: 10pt; padding: 0; margin: 0;}
 .titleDiv > div:nth-child(5) { font-size: 10pt; padding: 0; margin: 0;}
 .titleDiv > div:nth-child(5):after { content: var(--lastUpdateDate);}
-
-.SwitchPage {
-  position: absolute;
-  top: 33px;
-  left: 1196px;
-  background-color: #2ba6cb;
-  padding: 0.3em 0.3em;
-  color: #ccc;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  order: 0;
-  font-size: 11pt;
-}
-.SwitchPage a { text-decoration: none; color: black;}
-.SwitchPage a:hover { text-decoration: none; color: white;}
 
 
 /* ------------------------------ */
@@ -4137,22 +4121,33 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 /* ------------------------------ */
 /* 94 (tab-94). 遊戲紀錄 */
 /* 95 (tab-94). 遊戲紀錄的表格內，用來顯示技能的表格 */
+/* 遊戲紀錄都用 iframe 嵌入 */
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
+
 .List94, .List94a, .List94b, .List94c {
   display: grid;
   grid-column-gap: 0;
   font-size: 9.5pt;
   text-align: left;  
 }
-.List94, .List94a, .List94b { line-height: 1.5em;}
+.List94, .List94a, .List94a2, .List94b { line-height: 1.5em;}
 .List94c { line-height: 45em;}
-.List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 54.5em 3.6em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94a { grid-template-columns: 5.8em 5.4em 4.3em 57.5em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p0 { grid-template-columns: 5.8em 5.4em 4.3em 57.5em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p1 { grid-template-columns: 5.8em 5.4em 4.3em 56.1em 2em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p3 { grid-template-columns: 5.8em 5.4em 4.3em 52.9em 5.2em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p4 { grid-template-columns: 5.8em 5.4em 4.3em 51.2em 6.9em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p5 { grid-template-columns: 5.8em 5.4em 4.3em 49.8em 8.3em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
-.List94p9 { grid-template-columns: 5.8em 5.4em 4.3em 43.1em 15em 3.5em 4.5em 4em 3.8em 3.3em 3.3em 3.2em;}
+.List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 57.8em 3.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94a { grid-template-columns: 5.8em 5.4em 4.3em 60.8em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94a2 { grid-template-columns: 5.8em 5.4em 4.3em 83.7em;}
+.List94p0 { grid-template-columns: 5.8em 5.4em 4.3em 60.8em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p1 { grid-template-columns: 5.8em 5.4em 4.3em 59.4em 2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p3 { grid-template-columns: 5.8em 5.4em 4.3em 56.2em 5.2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p4 { grid-template-columns: 5.8em 5.4em 4.3em 54.5em 6.9em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p5 { grid-template-columns: 5.8em 5.4em 4.3em 53.1em 8.3em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p9 { grid-template-columns: 5.8em 5.4em 4.3em 46.4em 15em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94hr { grid-template-columns: 99.2em;}
 .List94hr > div { border-bottom: 1px solid #d6cdcd;}
 
@@ -4160,7 +4155,6 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 .Header94 > .List94 > div { padding-left: 2px; border-right: 1px solid #d6cdcd;}
 .Header94 > .List94 > div:nth-child(4) { grid-column: 4 / span 2;}
 .Header94 > .List94 > div:nth-child(5) { grid-column: 6 / span 3;}
-.Header94 > .List94 > div:nth-child(7) { grid-column: 10 / span 2;}
 
 .Table94 { font-size: 12pt; overflow-y: scroll; height: var(--Table94Height);}
 .Table94 > .List94 > div { border-right: 1px solid #d6cdcd; text-align: right; padding-right: 2px;}
@@ -4186,11 +4180,12 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 .Table94 > .List94[colorFilter="A"] { background-color: #e0f7fa;}
 .Table94 > .List94[colorFilter="B"] { background-color: #e8f5e9;}
 
-.Table94 > .List94a { background-color: #ffe4e1;}
-.Table94 > .List94a > div:nth-child(6) { grid-column: 6 / span 7;}
+.Table94 > .List94a, .Table94 > .List94a2 { background-color: #ffe4e1;}
+.Table94 > .List94a > div:nth-child(6) { grid-column: 6 / span 6;}
+.Table94 > .List94a2 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
 
 .Table94 > .List94b > div:nth-child(4) { text-align: left; padding: 0;}
-.Table94 > .List94b > div:nth-child(5) { grid-column: 5 / span 8;}
+.Table94 > .List94b > div:nth-child(5) { grid-column: 5 / span 7;}
 
 .Table94 > .List94c > div:nth-child(1) { grid-column: 1 / span 12; text-align: left;}
 
