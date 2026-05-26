@@ -19,7 +19,7 @@
 <div>網頁內容由 HTML + Pure CSS 所構成。包含以下檔案：</div><br/>
 <table>
   <tr><td>sea3.htm</td><td>資料內容</td></tr>
-  <tr><td>sea3record.htm</td><td>遊戲紀錄</td></tr>
+  <tr><td>sea3record1.htm</td><td>遊戲紀錄01</td></tr>
   <tr><td>style.css</td><td>網頁排版用的樣式表</td></tr>
   <tr><td>svg.css</td><td>向量圖使用的樣式表</td></tr>
   <tr><td>pic/</td><td>所有的圖檔</td></tr>
@@ -35,6 +35,7 @@
   <tr><td>pic/m/</td><td>　人物頭像</td></tr>
   <tr><td>pic/o/</td><td>　其他圖片</td></tr>
   <tr><td>pic/p/</td><td>　贊助人頭像</td></tr>
+  <tr><td>pic/r1/</td><td>　遊戲紀錄截圖（01）</td></tr>
   <tr><td>pic/s/</td><td>　船隻介紹的附圖</td></tr>
   <tr><td>pic/sea2/</td><td>　大航海時代二相關角色頭像</td></tr>
   <tr><td>pic/t/</td><td>　物品圖片</td></tr>
@@ -43,7 +44,4 @@
   <tr><td>pic/w/</td><td>　酒館女郎頭像</td></tr>
   <tr><td>pic/y/</td><td>　城市內各場所的對話</td></tr>
   <tr><td>pic/z/</td><td>　與妻子、小孩的對話</td></tr>
-  <tr><td>pic/r/</td><td>　遊戲紀錄一截圖（第一代）</td></tr>
-  <tr><td>pic/r2/</td><td>　遊戲紀錄一截圖（第二代）</td></tr>
-  <tr><td>pic/r3/</td><td>　遊戲紀錄一截圖（第三、四代）</td></tr>
 </table>
