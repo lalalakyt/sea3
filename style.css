@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/05/26"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
+  --lastUpdateDate: "2026/05/28"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -44,6 +44,15 @@
   --Table98Height: 601px;   /* 關於->內容架構 */
 }
 
+/* iframe */
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
 
 /* ------------------------------ */
 /* A. Title */
@@ -4121,33 +4130,24 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 /* ------------------------------ */
 /* 94 (tab-94). 遊戲紀錄 */
 /* 95 (tab-94). 遊戲紀錄的表格內，用來顯示技能的表格 */
-/* 遊戲紀錄都用 iframe 嵌入 */
-iframe {
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 100%;
-  height: 100%;
-  overflow: none;
-}
-
 .List94, .List94a, .List94b, .List94c {
   display: grid;
   grid-column-gap: 0;
   font-size: 9.5pt;
   text-align: left;  
 }
-.List94, .List94a, .List94a2, .List94b { line-height: 1.5em;}
+.List94, .List94a, .List94b { line-height: 1.5em;}
 .List94c { line-height: 45em;}
 .List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 57.8em 3.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94a { grid-template-columns: 5.8em 5.4em 4.3em 60.8em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94a2 { grid-template-columns: 5.8em 5.4em 4.3em 83.7em;}
+.List94a { grid-template-columns: 5.8em 5.4em 4.3em 83.7em;}
 .List94p0 { grid-template-columns: 5.8em 5.4em 4.3em 60.8em 0.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94p1 { grid-template-columns: 5.8em 5.4em 4.3em 59.4em 2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94p3 { grid-template-columns: 5.8em 5.4em 4.3em 56.2em 5.2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94p4 { grid-template-columns: 5.8em 5.4em 4.3em 54.5em 6.9em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94p5 { grid-template-columns: 5.8em 5.4em 4.3em 53.1em 8.3em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p6 { grid-template-columns: 5.8em 5.4em 4.3em 51.3em 10.1em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94p9 { grid-template-columns: 5.8em 5.4em 4.3em 46.4em 15em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p10 { grid-template-columns: 5.8em 5.4em 4.3em 44.4em 17em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
 .List94hr { grid-template-columns: 99.2em;}
 .List94hr > div { border-bottom: 1px solid #d6cdcd;}
 
@@ -4180,9 +4180,8 @@ iframe {
 .Table94 > .List94[colorFilter="A"] { background-color: #e0f7fa;}
 .Table94 > .List94[colorFilter="B"] { background-color: #e8f5e9;}
 
-.Table94 > .List94a, .Table94 > .List94a2 { background-color: #ffe4e1;}
-.Table94 > .List94a > div:nth-child(6) { grid-column: 6 / span 6;}
-.Table94 > .List94a2 > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
+.Table94 > .List94a { background-color: #ffe4e1;}
+.Table94 > .List94a > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
 
 .Table94 > .List94b > div:nth-child(4) { text-align: left; padding: 0;}
 .Table94 > .List94b > div:nth-child(5) { grid-column: 5 / span 7;}
@@ -4255,7 +4254,7 @@ iframe {
 /* 98 (tab-97sub06). 關於->內容架構 */
 .List98 {
   display: grid;
-  grid-template-columns: 2em 4.5em 7em 2.5em 12.5em 5em 8.75em 1.8em 7.5em 5.5em 5em 4em 6.5em 7em 2.5em 1fr;
+  grid-template-columns: 2em 4.5em 7em 2.5em 12.5em 5em 8.75em 1.8em 7.5em 5.5em 5em 4em 6.5em 7em 2.5em 3.5em 1fr;
   grid-column-gap: 0;
   padding-left: 2px;
   font-size: 9.5pt;
@@ -4296,6 +4295,7 @@ iframe {
 .Table98 > .List98[colorFilter~="1"] > div:nth-child(14) { background-color: #D2B48C;}
 .Table98 > .List98[colorFilter~="1"] > div:nth-child(15) { background-color: #D2B48C;}
 .Table98 > .List98[colorFilter~="1"] > div:nth-child(16) { background-color: #D2B48C;}
+.Table98 > .List98[colorFilter~="1"] > div:nth-child(17) { background-color: #D2B48C;}
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(8) { background-color: #FFDEAD;}
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(9) { background-color: #FFDEAD;}
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(10) { background-color: #FFDEAD;}
@@ -4305,6 +4305,7 @@ iframe {
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(14) { background-color: #FFDEAD;}
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(15) { background-color: #FFDEAD;}
 .Table98 > .List98[colorFilter~="2"] > div:nth-child(16) { background-color: #FFDEAD;}
+.Table98 > .List98[colorFilter~="2"] > div:nth-child(17) { background-color: #FFDEAD;}
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(8) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(9) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(10) { background-color: #778899;}
@@ -4314,6 +4315,7 @@ iframe {
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(14) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(15) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="0"] > div:nth-child(16) { background-color: #778899;}
+.Table98 > .List98[colorFilter~="0"] > div:nth-child(17) { background-color: #778899;}
 
 .Table98 > .List98[colorFilter~="T"] > div:nth-child(5) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="T"] > div:nth-child(6) { background-color: #778899;}
@@ -4327,6 +4329,7 @@ iframe {
 .Table98 > .List98[colorFilter~="T"] > div:nth-child(14) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="T"] > div:nth-child(15) { background-color: #778899;}
 .Table98 > .List98[colorFilter~="T"] > div:nth-child(16) { background-color: #778899;}
+.Table98 > .List98[colorFilter~="T"] > div:nth-child(17) { background-color: #778899;}
 
 .Table98 > .List98[lineFilter~="A"] > div:nth-child(1) { border-bottom: 1px solid #d6cdcd;}
 .Table98 > .List98[lineFilter~="A"] > div:nth-child(2) { border-bottom: 1px solid #d6cdcd;}
@@ -4344,6 +4347,7 @@ iframe {
 .Table98 > .List98[lineFilter~="D"] > div:nth-child(14) { border-bottom: 1px solid #d6cdcd;}
 .Table98 > .List98[lineFilter~="D"] > div:nth-child(15) { border-bottom: 1px solid #d6cdcd;}
 .Table98 > .List98[lineFilter~="D"] > div:nth-child(16) { border-bottom: 1px solid #d6cdcd;}
+.Table98 > .List98[lineFilter~="D"] > div:nth-child(17) { border-bottom: 1px solid #d6cdcd;}
 
 .Table98 > .List98[colorFilter~="H"] > div:nth-child(4) { background-color: #777777;}
 .Table98 > .List98[colorFilter~="H"] > div:nth-child(5) { background-color: #777777;}
