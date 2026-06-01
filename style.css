@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/06/01"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在兩個 html 上 */
+  --lastUpdateDate: "2026/06/01"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上 */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
