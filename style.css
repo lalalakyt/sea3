@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/06/01"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上 */
+  --lastUpdateDate: "2026/06/03"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -44,15 +44,6 @@
   --Table98Height: 601px;   /* 關於->內容架構 */
 }
 
-/* iframe */
-iframe {
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 100%;
-  height: 100%;
-  overflow: none;
-}
 
 /* ------------------------------ */
 /* A. Title */
@@ -76,6 +67,15 @@ iframe {
 
 /* ------------------------------ */
 /* B. General */
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
+
 * { font-family: 'Heiti TC', 'PingFang TC', '微軟正黑體', sans-serif;}
 p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
@@ -84,11 +84,11 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   margin-left: 1em;
 }
 
-.desc > .img-r { padding: 0em 1em 0em 2em; font-size: 10pt; text-align: center; color: #7b7b7b; float: right;}
-.desc > .img-r > div { padding: 0em 0em 1.5em 0em;}
-.desc > .img-r > div > img { width: 420px;}
-.desc > .img-l { padding: 0em 1em 1em 0em; font-size: 10pt; text-align: center; color: #7b7b7b; float: left;}
-.desc > .img-l > div { padding: 0em 0.5em 0.5em 0.5em;}
+.img-r { padding: 0em 1em 0em 2em; font-size: 10pt; text-align: center; color: #7b7b7b; float: right;}
+.img-r > div { padding: 0em 0em 1.5em 0em;}
+.img-r > div > img { width: 420px;}
+.img-l { padding: 0em 1em 1em 0em; font-size: 10pt; text-align: center; color: #7b7b7b; float: left;}
+.img-l > div { padding: 0em 0.5em 0.5em 0.5em;}
 
 .title   { font-size: 16pt; font-weight: bold; padding: 8px 8px 8px 8px; border-top: 1px solid #d6cdcd;}
 .title0  { font-size: 16pt; font-weight: bold; padding: 0 8px 1em 8px;}
@@ -260,20 +260,67 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 
 /* ------------------------------ */
-/* E. 開關下方div內容 */
+/* D. subTab-split */
+.subTab-split {
+  position: relative;
+  display: flex;
+  font-size: 12pt;
+  padding: 0;
+  margin: 0;
+}
+.subTab-split input[type="radio"] { display: none;}
+
+.subTab-split > .split-menu > label {
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: left;
+  font-size: 12pt;
+  font-weight: bold;
+}
+.subTab-split > .split-menu label:hover { background-color: #ddd;}
+
+.subTab-split > .split-menu {
+  display: flex;
+  flex-direction: column;
+  /* width: 13em; 改成各分頁各自指定 */
+  background-color: #f1f1f1;
+  border-right: 1px solid #ccc;
+  height: var(--subTabHeight);
+}
+
+.subTab-split > .split-menu > .split-content { display: none;}
+.subTab-split > .split-menu > input[type="radio"]:checked + label + .split-content { display: block;}
+.subTab-split > .split-menu > input[type="radio"]:checked + label { background-color: #fff; border-right: 3px solid #007bff;}
+
+.subTab-split .split-content {
+  position: absolute; 
+  top: 0;
+  /* left: 13em; 改成各分頁各自指定 */
+  bottom: 0;
+  right: 0;
+  padding: 0.5em 1em 0.5em 0.5em; /*t/r/b/l*/
+  margin-left: 0.5em;
+  overflow-y: scroll;
+  order: 2;
+}
+
+
+/* ------------------------------ */
+/* F. 開關下方div內容 */
 .iconOpenClose { font-size: 12pt; color: blue;}
 
-/* E-1. 全開/全關 */
+/* F-1. 全開/全關 */
 .openAll-o:checked ~ div[class="desc"] { display: block;}
 .openAll-c:checked ~ div[class="desc"] { display: none;}
 
-/* E-2. 預設：關 */
+/* F-2. 預設：關 */
 .openDiv { display: none;}
 .openDiv:checked + div > label > span:nth-of-type(1) { display: none;}
 .openDiv:not(:checked) + div > label > span:nth-of-type(2) { display: none;}
 .openDiv:not(:checked) + div + div { display: none;}
 
-/* E-3. 預設：開 */
+/* F-3. 預設：開 */
 .openDiv2 { display: none;}
 .openDiv2:not(:checked)  + div > label > span:nth-of-type(1) { display: none;}
 .openDiv2:checked + div > label > span:nth-of-type(2) { display: none;}
@@ -281,7 +328,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 
 /* ------------------------------ */
-/* F. 通用的List */
+/* G. 通用的List */
 .ListA1, .ListA2, .ListA3, .ListA4, .ListA5 {
   display: grid;
   grid-column-gap: 0;
@@ -474,14 +521,14 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .Table08 > .List08[cityFilter="1"] > div:nth-child(29) { text-align: center; padding-left: 2px; border-right: 1px solid #d6cdcd; grid-column: 26 / span 2;}
 .Table08 > .List08[cityFilter="1"] > div:nth-child(30) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
 
-.Table08 .city0 { font-size: 12pt;}
-.Table08 .city1 { font-size: 12pt; color: red;}
-.Table08 .city2 { font-size: 12pt; color: blue;}
-.Table08 .city3 { font-size: 12pt; color: green;}
+.Table08 .city0 { font-size: 11pt;}
+.Table08 .city1 { font-size: 11pt; color: red;}
+.Table08 .city2 { font-size: 11pt; color: blue;}
+.Table08 .city3 { font-size: 11pt; color: green;}
 
-.Table08 .city12 { font-size: 12pt; color: red;}
+.Table08 .city12 { font-size: 11pt; color: red;}
 .Table08 .city12:hover { color: blue;}
-.Table08 .city32 { font-size: 12pt; color: green;}
+.Table08 .city32 { font-size: 11pt; color: green;}
 .Table08 .city32:hover { color: blue;}
 
 .Header08 > .List08 label { background-color: #2ba6cb; color: black;}
@@ -956,25 +1003,28 @@ input[name="Filter08"]:checked ~ .Table08 > div { display: none;}
 
 
 /* ------------------------------ */
-/* 15 (tab-15). 城市場景 */
-.Table15 {
+/* 14 (tab-06sub10). 城市->城市場景 */
+#tab-06sub10 + label + .subTab-content > .subTab-split > .split-menu { width: 4.5em;}
+#tab-06sub10 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 4.5em;}
+
+.Table14 {
   display: grid;
-  grid-template-columns: 1.5em 387px 1.5em 387px 1.5em 387px;
+  grid-template-columns: 1.5em 362px 1.5em 362px 1.5em 362px;
   grid-column-gap: 1;
   font-size: 12pt;
   text-align: left;
 }
-.Table15 > div { padding: 3px;}
-.Table15 > div:nth-child(1) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(3) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(5) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(7) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(9) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(11) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(13) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(15) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 > div:nth-child(17) { font-weight: bold; color: #4aa; padding-left: 5px;}
-.Table15 img { width: 380px;}
+.Table14 > div { padding: 3px;}
+.Table14 > div:nth-child(1) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(3) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(5) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(7) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(9) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(11) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(13) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(15) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 > div:nth-child(17) { font-weight: bold; color: #4aa; padding-left: 5px;}
+.Table14 img { width: 357px;}
 
 
 /* ------------------------------ */
@@ -2408,6 +2458,11 @@ input[name="Filter31"]:checked ~ .Table31 > div { display: none;}
 .Table33 > .List33 > .List33b > div:nth-child(4) { padding: 0 3px 0 3px; font-size: 10pt; text-align: justify;}
 .Table33 > .List33 { border-right: 1px solid #d6cdcd;} 
 .Table33 img { width: 60px;}
+
+
+/* 34 (tab-31sub04). 人物->人萊昂．法雷爾 */
+#tab-31sub04 + label + .subTab-content > .subTab-split > .split-menu { width: 13em;}
+#tab-31sub04 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 13em;}
 
 
 /* ------------------------------ */
@@ -3889,6 +3944,8 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 
 
 /* 77 (tab-71sub09). 船艦->船隻介紹 */
+#tab-71sub09 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-71sub09 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
 .List77 {
   display: grid;
   grid-template-columns: 6em 8em 10em 10em;
