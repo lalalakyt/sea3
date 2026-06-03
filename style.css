@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/06/03"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/06/04"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -260,40 +260,41 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 
 /* ------------------------------ */
-/* D. subTab-split */
-.subTab-split {
+/* D. tab-split, subTab-split */
+.tab-split, .subTab-split  {
   position: relative;
   display: flex;
   font-size: 12pt;
   padding: 0;
   margin: 0;
 }
-.subTab-split input[type="radio"] { display: none;}
+.tab-split input[type="radio"], .subTab-split input[type="radio"]  { display: none;}
 
-.subTab-split > .split-menu > label {
-  padding: 15px 10px;
+.split-menu > label {
+  padding: 14px 10px;
   cursor: pointer;
   transition: 0.3s;
   text-align: left;
   font-size: 12pt;
   font-weight: bold;
 }
-.subTab-split > .split-menu label:hover { background-color: #ddd;}
+.split-menu label:hover { background-color: #ddd;}
 
-.subTab-split > .split-menu {
+.split-menu {
   display: flex;
   flex-direction: column;
   /* width: 13em; 改成各分頁各自指定 */
   background-color: #f1f1f1;
   border-right: 1px solid #ccc;
-  height: var(--subTabHeight);
 }
+.tab-split > .split-menu { height: var(--mainTabHeight);}
+.subTab-split > .split-menu { height: var(--subTabHeight);}
 
-.subTab-split > .split-menu > .split-content { display: none;}
-.subTab-split > .split-menu > input[type="radio"]:checked + label + .split-content { display: block;}
-.subTab-split > .split-menu > input[type="radio"]:checked + label { background-color: #fff; border-right: 3px solid #007bff;}
+.split-menu > .split-content { display: none;}
+.split-menu > input[type="radio"]:checked + label + .split-content { display: block;}
+.split-menu > input[type="radio"]:checked + label { background-color: #fff; border-right: 3px solid #007bff;}
 
-.subTab-split .split-content {
+.split-menu > .split-content {
   position: absolute; 
   top: 0;
   /* left: 13em; 改成各分頁各自指定 */
@@ -361,6 +362,8 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* ------------------------------ */
 /* 02 (tab-02sub03). 遊戲進行->角色創建 */
+#tab-02 + label + .tab-content > .tab-split > .split-menu { width: 5.5em;}
+#tab-02 + label + .tab-content > .tab-split > .split-menu .split-content { left: 5.5em;}
 
 .List02 {
   display: grid;
