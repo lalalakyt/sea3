@@ -323,10 +323,15 @@
           <div class="text2">奇怪的疾病、虛弱：水手會開始死亡，除非靠岸登陸，若玩家或副官的醫學等級達到3，則可避免。</div>
           <div class="text2">敵方攻擊。</div>
           <div class="text2">叛亂：紀律過低時會發生，單跳失敗則遊戲結束。</div>
+          <div class="text2">生日、聖誕節：疲勞度和紀律恢復，可以透過這兩個事件來延長航行的時間（延後暴動或是水手死亡的時間）。</div>
           
           <div class="title2"><span>陸上探險</span>會遭遇以下狀況</div>
           <div class="text2">龍捲風、落石、流沙：平地上會發生龍捲風、山區會發生落石、沙漠中會發生流沙。會造成船員的死亡。</div>
           <div class="text2">野獸：可選擇逃跑或是迎擊，有一定的機率造成船員死亡。</div>
+          <div class="text4">遭遇龍捲風、落石、流沙、野獸時，若有水手死亡，會出現這樣的對話內容：</div>
+          <div class="text6">46名隊員已經死亡。</div>
+          <div class="text6">14名隊員返回了。</div>
+          <div class="text4">以上46、14兩個數字為舉例，這應該是翻譯錯誤，實際的意思應該類似於46名隊員受傷，14名隊員被救回，也就是總共46-14=32名隊員死亡。</div>
           <div class="text2">溫泉：疲勞度-10，紀律+10。</div>
           <div class="text2">敵方攻擊。</div>
           <div class="text2">叛亂：紀律過低時會發生，單跳失敗則遊戲結束。</div>
@@ -403,12 +408,13 @@
   <input type="radio" name="tab" id="tab-05"><!-- 05 -->
   <label for="tab-05" data-filtertype="mainTab">年表</label>
   <div class="tab-content">
-    <div class="textA">詳細年表另可見以下四處：「城市→歷史事件年表」、「百科→發現物年表」、「事件→重要航海士」、「線索→圖書館」</div>      
+    <div class="textA">詳細年表另可見以下四處：「城市→歷史事件年表」、「百科→發現物年表」、「事件→重要航海士」、「線索→圖書館」</div>
+    <a href="#ID05" class="go-to-top"></a>
     <div class="Header05">
       <div class="List05"><div></div><div>發現</div><div>報告</div><div>城市興建</div><div>城市狀況</div><div>城市主權異動</div><div>國家</div><div>其他</div></div>
     </div>
     <div class="Table05">
-      <div class="List05"><div>1482</div><div>/01</div><div></div><div></div><div></div><div></div><div></div><div></div><div>「剛果王國記」出版（快樂民族）</div></div>
+      <div id="ID05" class="List05"><div>1482</div><div>/01</div><div></div><div></div><div></div><div></div><div></div><div></div><div>「剛果王國記」出版（快樂民族）</div></div>
       <div class="List05"><div></div><div>/02</div><div></div><div></div><div>聖喬治（葡）</div><div></div><div></div><div></div><div></div></div>
       <div class="List05"><div>1483</div><div>/01</div><div></div><div></div><div></div><div></div><div></div><div></div><div>西語版「世界地圖」出版（西行航線）</div></div>
       <div class="List05"><div>1484</div><div>/01</div><div></div><div></div><div></div><div></div><div>康士坦沙→奧斯曼帝國</div><div>摩達維亞侯國滅亡</div><div></div></div>
@@ -1626,7 +1632,7 @@
           
           <div class="List08" cityFilter="1" data-filter="v1 v2" colorFilter="colorB"><div>211</div><div>D3</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%9C%A3%E7%8E%9B%E5%B0%94%E5%A1%94_(%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A)">聖馬塔</a></div><div>Santa Marta</div><div>N11</div><div>W75</div><div><span class="city0" title="聖馬塔港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>可可</div><div></div><div>0</div><div>1525/01</div><div>西班牙王國（遊戲設定錯誤導致未建立）</div><div>聖瑪爾塔</div><div>哥倫比亞</div></div>
           <div class="List08" cityFilter="1" data-filter="v1 v2" colorFilter="colorB"><div>212</div><div>D4</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E8%81%96%E5%AE%89%E5%A8%9C%E5%BE%B7%E7%A7%91%E7%BE%85">科羅</a></div><div>Santa Ana de Coro</div><div>N11</div><div>W70</div><div><span class="city0" title="科羅港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>珍珠</div><div></div><div>0</div><div>1525/01</div><div>西班牙王國（遊戲設定錯誤導致1531/04才建港）</div><div>科羅</div><div>委內瑞拉，全名「聖安娜德科羅」</div></div>
-          <div class="List08" cityFilter="1" data-filter="v1 v2 v4" colorFilter="colorB"><div>213</div><div>D5</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%BA%AB%E9%A6%AC%E7%B4%8D">庫馬納</a></div><div>Cumaná</div><div>N10</div><div>W64</div><div><span class="city0" title="庫馬納港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city3" title="酒館，酒館女郎 #124">●</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>烟草</div><div></div><div>0</div><div>1502/01</div><div>西班牙王國</div><div>庫馬納</div><div>委內瑞拉</div></div>
+          <div class="List08" cityFilter="1" data-filter="v1 v2 v4" colorFilter="colorB"><div>213</div><div>D5</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%BA%AB%E9%A6%AC%E7%B4%8D">庫馬納</a></div><div>Cumaná</div><div>N10</div><div>W64</div><div><span class="city0" title="庫馬納港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city3" title="酒館，酒館女郎 #124">●</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>草</div><div></div><div>0</div><div>1502/01</div><div>西班牙王國</div><div>庫馬納</div><div>委內瑞拉</div></div>
           <div class="List08" cityFilter="1" data-filter="v1 v2 v4" colorFilter="colorB"><div>214</div><div>D6</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E4%BC%AF%E5%8D%97%E5%B8%83%E5%93%A5%E5%B7%9E">珀南布科</a></div><div>Pernambuco</div><div>S7</div><div>W34</div><div><span class="city0" title="珀南布科港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city3" title="酒館，酒館女郎 #125">●</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>染料</div><div></div><div>0</div><div>1515/01</div><div>葡萄牙王國</div><div>伯南布哥</div><div>巴西</div></div>
           <div class="List08" cityFilter="1" data-filter="v1 v2" colorFilter="colorB"><div>215</div><div>D7</div><div>巴伊亞</div><div>Bahia</div><div>S12</div><div>W38</div><div><span class="city0" title="巴伊亞港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>砂糖</div><div></div><div>0</div><div>1510/01</div><div>葡萄牙王國</div><div>巴伊亞</div><div>巴西，現稱<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E8%90%A8%E5%B0%94%E7%93%A6%E5%A4%9A_(%E5%B7%B4%E8%A5%BF)">薩爾瓦多</a></div></div>
           <div class="List08" cityFilter="1" data-filter="v1 v2 v4 v5" colorFilter="colorB"><div>216</div><div>D8</div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%87%8C%E7%BA%A6%E7%83%AD%E5%86%85%E5%8D%A2">里約熱內盧</a></div><div>Rio de Janeiro</div><div>S23</div><div>W44</div><div><span class="city0" title="里約熱內盧港">●</span></div><div><span class="city0">○</span></div><div></div><div><span class="city0">○</span></div><div><span class="city3" title="酒館，酒館女郎 #126">●</span></div><div><span class="city0">○</span></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div><span class="city0">○</span></div><div></div><div></div><div></div><div></div><div>美洲</div><div>南美東部</div><div>金</div><div></div><div>0</div><div>1517/01</div><div>葡萄牙王國</div><div>里約熱內盧</div><div>巴西</div></div>
@@ -1647,13 +1653,14 @@
       <label for="tab-06sub04" data-filtertype="subTab">歷史事件年表</label>
       <div class="subTab-content">
         <div class="textB">遊戲中設定的79個歷史事件，以及重要航海士攻佔城市的年表：</div>
+        <a href="#ID06sub04" class="go-to-top"></a>
         <div class="Header09">
           <div class="List09">
             <div>時間</div><div>國家</div><div>城市</div><div>城市狀況</div><div>酒館/旅館的對話</div>
           </div>
         </div>
         <div class="Table09">
-          <div class="List09"><div>1480/02</div><div></div><div></div><div></div><div>南邊那個面積很大的大陸是非洲。【伊比利亞】<br/>葡萄牙和西班牙共有的這個半島，被稱為伊比利亞。你知道嗎？【伊比利亞】<br/>法國就是在北部庇里牛斯山脈那邊的國家。【伊比利亞】<br/>在北邊的大不列顛島上，有個叫英格蘭的國家。【伊比利亞】<br/>被歐洲和非洲包圍的大型內海，叫地中海。【地中海、伊比利亞】</div></div>
+          <div id="ID06sub04" class="List09"><div>1480/02</div><div></div><div></div><div></div><div>南邊那個面積很大的大陸是非洲。【伊比利亞】<br/>葡萄牙和西班牙共有的這個半島，被稱為伊比利亞。你知道嗎？【伊比利亞】<br/>法國就是在北部庇里牛斯山脈那邊的國家。【伊比利亞】<br/>在北邊的大不列顛島上，有個叫英格蘭的國家。【伊比利亞】<br/>被歐洲和非洲包圍的大型內海，叫地中海。【地中海、伊比利亞】</div></div>
           <div class="List09"><div>1480/07</div><div></div><div></div><div></div><div>地中海正中間長靴子狀的半島，是義大利。【地中海、伊比利亞】<br/>義大利東邊的大半島是巴爾幹半島。南邊有希臘。【地中海】<br/>法國的東部有神聖羅馬帝國。再往東是波蘭。【伊比利亞】<br/>所謂近東，就是指地中海東邊那塊地方。【地中海】</div></div>
           <div class="List09"><div>1482/02</div><div></div><div>聖喬治興建</div><div></div><div>聽說葡萄牙在幾內亞南岸建造了聖喬治港。【里斯本】</div></div>
           <div class="List09"><div></div><div></div><div></div><div></div><div>所謂近東，就是指地中海東邊那塊地方。【地中海】<br/>如果過了巴爾幹半島東部的伊斯坦堡，就到達了黑海。【地中海】<br/>德國北部突出的半島是丹麥。向東是波羅的海。【塞維爾】</div></div>
@@ -1816,7 +1823,8 @@
       <input type="radio" name="tab-06sub" id="tab-06sub05"><!-- 10 -->
       <label for="tab-06sub05" data-filtertype="subTab">城市遠眺路人</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="desc">
+        <a href="#ID06sub05" class="go-to-top"></a>
+        <div class="desc" id="ID06sub05">
           <div class="text0X">各城市左下或右下遠眺的路人，除了會說這裡是什麼城市以及是哪個國家的城市以外，還有以下對話：（<span>以下註解中的原文資料來源自簡體中文資料，可能存在拼寫錯誤。</span>）</div>
           <div class="text0"><hr/></div>
           <div class="title2"><span>伊比利亞</span></div>
@@ -2274,7 +2282,8 @@
       <input type="radio" name="tab-06sub" id="tab-06sub06"><!-- 11 -->
       <label for="tab-06sub06" data-filtertype="subTab">酒館旅館路人</label>
       <div class="subTab-content2">
-        <div class="desc">
+        <a href="#ID06sub06" class="go-to-top"></a>
+        <div class="desc" id="ID06sub06">
           <div class="text0">酒館旅館的路人的數量上限＝城市規模＋１。</div>
           <div class="text0">路人的種類包含城市所屬文化圈＋國家所屬文化圈。</div>
           <div class="text2">若開羅被西班牙攻下，則城市內的酒館和旅館，會有兩種文化圈的路人：</div>
@@ -4509,7 +4518,7 @@
           <div class="List26"><div>29</div><div>咖啡</div><div>嗜好品</div><div>5</div><div>7</div><div>100</div><div>105</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>100</div><div>105</div><div>140</div><div>75</div><div>55</div><div>40</div><div>150</div><div>140</div><div>125</div><div>100</div><div>75</div><div>40</div><div>35</div><div>0</div><div>0</div><div>0</div><div>20</div><div>15</div><div>20</div><div>15</div><div>10</div></div>
           <div class="List26"><div>30</div><div>茶</div><div>嗜好品</div><div>5</div><div>7</div><div>135</div><div>145</div><div>145</div><div>140</div><div>150</div><div>145</div><div>145</div><div>140</div><div>125</div><div>70</div><div>40</div><div>35</div><div>40</div><div>70</div><div>70</div><div>70</div><div>80</div><div>90</div><div>95</div><div>50</div><div>50</div><div>60</div><div>120</div><div>30</div><div>20</div><div>30</div><div>20</div><div>15</div></div>
           <div class="List26"><div>31</div><div>可可</div><div>嗜好品</div><div>5</div><div>7</div><div>115</div><div>120</div><div>125</div><div>125</div><div>125</div><div>125</div><div>120</div><div>120</div><div>110</div><div>75</div><div>60</div><div>60</div><div>60</div><div>80</div><div>75</div><div>65</div><div>60</div><div>50</div><div>30</div><div>20</div><div>0</div><div>0</div><div>0</div><div>110</div><div>60</div><div>80</div><div>60</div><div>70</div></div>
-          <div class="List26"><div>32</div><div>烟草</div><div>嗜好品</div><div>5</div><div>7</div><div>135</div><div>135</div><div>135</div><div>140</div><div>140</div><div>140</div><div>135</div><div>130</div><div>120</div><div>110</div><div>100</div><div>100</div><div>110</div><div>90</div><div>70</div><div>60</div><div>70</div><div>80</div><div>80</div><div>55</div><div>65</div><div>70</div><div>80</div><div>30</div><div>70</div><div>65</div><div>70</div><div>80</div></div>
+          <div class="List26"><div>32</div><div>煙草</div><div>嗜好品</div><div>5</div><div>7</div><div>135</div><div>135</div><div>135</div><div>140</div><div>140</div><div>140</div><div>135</div><div>130</div><div>120</div><div>110</div><div>100</div><div>100</div><div>110</div><div>90</div><div>70</div><div>60</div><div>70</div><div>80</div><div>80</div><div>55</div><div>65</div><div>70</div><div>80</div><div>30</div><div>70</div><div>65</div><div>70</div><div>80</div></div>
           <div class="List26"><div>33</div><div>羊毛</div><div>纖維</div><div>3</div><div>7</div><div>45</div><div>45</div><div>50</div><div>50</div><div>25</div><div>50</div><div>45</div><div>45</div><div>45</div><div>30</div><div>25</div><div>20</div><div>25</div><div>40</div><div>35</div><div>35</div><div>40</div><div>40</div><div>35</div><div>25</div><div>35</div><div>35</div><div>30</div><div>35</div><div>40</div><div>35</div><div>40</div><div>40</div></div>
           <div class="List26"><div>34</div><div>綿花</div><div>纖維</div><div>3</div><div>7</div><div>30</div><div>35</div><div>40</div><div>40</div><div>30</div><div>40</div><div>35</div><div>35</div><div>35</div><div>15</div><div>15</div><div>10</div><div>15</div><div>30</div><div>15</div><div>30</div><div>20</div><div>10</div><div>20</div><div>10</div><div>20</div><div>25</div><div>25</div><div>25</div><div>35</div><div>25</div><div>35</div><div>30</div></div>
           <div class="List26"><div>35</div><div>生絲</div><div>纖維</div><div>3</div><div>7</div><div>130</div><div>140</div><div>140</div><div>150</div><div>130</div><div>150</div><div>140</div><div>140</div><div>140</div><div>120</div><div>50</div><div>45</div><div>45</div><div>120</div><div>115</div><div>100</div><div>100</div><div>95</div><div>70</div><div>50</div><div>30</div><div>25</div><div>70</div><div>50</div><div>55</div><div>45</div><div>55</div><div>55</div></div>
@@ -4598,7 +4607,7 @@
           <div class="List26"><div>29</div><div>咖啡</div><div>嗜好品</div><div>5</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>60</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List26"><div>30</div><div>茶</div><div>嗜好品</div><div>5</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>75</div><div>90</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List26"><div>31</div><div>可可</div><div>嗜好品</div><div>5</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>90</div><div></div><div></div><div></div></div>
-          <div class="List26"><div>32</div><div>烟草</div><div>嗜好品</div><div>5</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>45</div><div></div><div></div><div></div><div></div></div>
+          <div class="List26"><div>32</div><div>煙草</div><div>嗜好品</div><div>5</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>45</div><div></div><div></div><div></div><div></div></div>
           <div class="List26"><div>33</div><div>羊毛</div><div>纖維</div><div>3</div><div>7</div><div></div><div></div><div></div><div></div><div>37</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List26"><div>34</div><div>綿花</div><div>纖維</div><div>3</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>22</div><div></div><div></div><div></div><div></div><div>22</div><div></div><div></div><div>15</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List26"><div>35</div><div>生絲</div><div>纖維</div><div>3</div><div>7</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>45</div><div>37</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -4660,7 +4669,7 @@
             <div>乳製品（食品）</div><div>砂糖（食品）</div><div>蜂蜜（食品）</div><div>岩鹽（食品）</div><div>橄欖油（食品）</div><div>椰子油（食品）</div><div>葡萄酒（酒類）</div>
             <div>白蘭地（酒類）</div><div>萊姆酒（酒類）</div><div>金（貴金屬）</div><div>銀（貴金屬）</div><div>玻璃（工藝品）</div><div>皮製品（工藝品）</div><div>陶磁器（工藝品）</div>
             <div>步槍（武器）</div><div>大砲（武器）</div><div>胡椒（香辛料，<span>需發現</span>）</div><div>丁香（香辛料，<span>需發現</span>）</div><div>肉豆蔻（香辛料）</div><div>肉桂（香辛料，<span>需發現</span>）</div><div>甜椒（香辛料，<span>需發現</span>）</div>
-            <div>生薑（香辛料）</div><div>咖啡（嗜好品，<span>需發現</span>）</div><div>茶（嗜好品，<span>需發現</span>）</div><div>可可（嗜好品，<span>需發現</span>）</div><div>烟草（嗜好品，<span>需發現</span>）</div><div>羊毛（纖維）</div><div>綿花（纖維）</div>
+            <div>生薑（香辛料）</div><div>咖啡（嗜好品，<span>需發現</span>）</div><div>茶（嗜好品，<span>需發現</span>）</div><div>可可（嗜好品，<span>需發現</span>）</div><div>煙草（嗜好品，<span>需發現</span>）</div><div>羊毛（纖維）</div><div>綿花（纖維）</div>
             <div>生絲（纖維，<span>需發現</span>）</div><div>麻（纖維）</div><div>毛織物（纖維）</div><div>綿織物（纖維）</div><div>綢緞（纖維）</div><div>亞麻布（纖維）</div><div>鐵礦石（礦石）</div>
             <div>銅礦石（礦石）</div><div>錫礦石（礦石）</div><div>水銀（礦石）</div><div>煤炭（礦石）</div><div>美術品（奢侈品）</div><div>骨董（奢侈品，<span>需發現</span>）</div><div>地毯（奢侈品，<span>需發現</span>）</div>
             <div>花紗布（奢侈品，<span>需發現</span>）</div><div>毛皮（奢侈品）</div><div>麝香（奢侈品，<span>需發現</span>）</div><div>乳香（奢侈品，<span>需發現</span>）</div><div>龍涎香（奢侈品，<span>需發現</span>）</div><div>白檀（奢侈品，<span>需發現</span>）</div><div>寶石（寶石）</div>
@@ -6102,7 +6111,8 @@
       <input type="radio" name="tab-25sub" id="tab-25sub07">
       <label for="tab-25sub07" data-filtertype="subTab">販賣奴隸</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="desc">
+        <a href="#ID25sub07" class="go-to-top"></a>
+        <div class="desc" id="ID25sub07">
           <div class="text0"><a target="_blank" rel="noreferrer noopener" href="https://tieba.baidu.com/p/5889340291">資料來源</a> by wookao748</div>
           <div class="text0">中文版的《大航海時代３》已經取消了這項交易品。</div>
           <div class="text0">但如果還想要貿易這個商品的話，可以修改出來（見修改→其他），但即使修改出來，也是沒有劇情的。</div>
@@ -6583,13 +6593,14 @@
       <input type="radio" name="tab-31sub" id="tab-31sub02"><!-- 32 -->
       <label for="tab-31sub02" data-filtertype="subTab">人物簡介</label>
       <div class="subTab-content aRemoveUnderLine">
+        <a href="#ID31sub02" class="go-to-top"></a>
         <div class="Header32">
           <div class="List32">
             <div>序號</div><div></div><div>姓名</div><div>生卒年</div><div>簡介</div>
           </div>
         </div>
         <div class="Table32">
-          <div class="List32"><div>0</div><div><img src="pic/m/m000.png" loading="lazy"/></div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E7%88%BE%E6%89%98%E6%B4%9B%E6%A2%85%E7%83%8F%C2%B7%E8%BF%AA%E4%BA%9E%E5%A3%AB">巴托羅繆．迪亞士</a><br/>Bartolomeu Dias<br/>バルトロメウ＝ディアス</div><div>約1450</div><div>-</div><div>1500</div>
+          <div id="ID31sub02" class="List32"><div>0</div><div><img src="pic/m/m000.png" loading="lazy"/></div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E7%88%BE%E6%89%98%E6%B4%9B%E6%A2%85%E7%83%8F%C2%B7%E8%BF%AA%E4%BA%9E%E5%A3%AB">巴托羅繆．迪亞士</a><br/>Bartolomeu Dias<br/>バルトロメウ＝ディアス</div><div>約1450</div><div>-</div><div>1500</div>
             <div>葡萄牙航海家、探險家。1488年發現<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%A5%BD%E6%9C%9B%E8%A7%92">好望角</a>，為葡萄牙開闢通往印度的新航線奠定了堅實的基礎，1500年於好望角海域遭遇了風暴，葬身海底。</div></div>
           <div class="List32"><div>1</div><div><img src="pic/m/m001.png" loading="lazy"/></div><div><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E4%BD%A9%E5%BE%B7%E7%BD%97%C2%B7%E9%98%BF%E5%B0%94%E7%93%A6%E9%9B%B7%E6%96%AF%C2%B7%E5%8D%A1%E5%B8%83%E6%8B%89%E5%B0%94">佩德羅．阿爾伯列斯．卡布拉爾</a><br/>Pedro Álvares Cabral<br/>ペドロ＝アルバレス＝カブラル</div><div>1467<br/>或1468</div><div><br/>-</div><div><br/>約1520</div>
             <div>葡萄牙航海家、探險家。1500年發現現在的<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E8%A5%BF">巴西</a>，當時取名叫「聖十字架之地」（Terra de Vera Cruz）。後到達<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6">印度</a>，並炮擊了<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E7%A7%91%E6%B3%BD%E7%A7%91%E5%BE%B7">卡利刻特</a>。</div></div>
@@ -7377,13 +7388,14 @@
       <input type="radio" name="tab-36sub" id="tab-36sub01" checked="checked"><!-- 36 -->
       <label for="tab-36sub01" data-filtertype="subTab">酒館女郎</label>
       <div class="subTab-content">
+        <a href="#ID36sub01" class="go-to-top"></a>
         <div class="Header36">
           <div class="List36">
             <div>序號</div><div></div><div>姓名</div><div>城市</div><div>出生年</div><div>活動年代</div><div>西班牙語</div><div>葡萄牙語</div><div>羅曼語</div><div>日耳曼語</div><div>斯拉夫希臘語</div><div>阿拉伯語</div><div>波斯語</div><div>漢語</div><div>印地語</div><div>維吾爾語</div><div>非洲土語</div><div>中南美土語</div><div>東南亞土語</div><div>東亞土語</div><div>星座</div><div>血型</div><div>傾慕特質</div><div>二代頭像 - 所在城市 - 名字</div>
           </div>
         </div>
         <div class="Table36">
-          <div class="List36"><div>0</div><div>00</div><div>20</div><div><img src="pic/w/w000.png" loading="lazy"/></div><div>卡爾露達</div><div>里斯本</div><div>1483</div><div>1498-1523</div><div>●</div><div>●</div><div>●</div><div>●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>天秤座</div><div>Ｏ</div><div>纖細</div><div></div><div></div></div>
+          <div class="List36" id="ID36sub01"><div>0</div><div>00</div><div>20</div><div><img src="pic/w/w000.png" loading="lazy"/></div><div>卡爾露達</div><div>里斯本</div><div>1483</div><div>1498-1523</div><div>●</div><div>●</div><div>●</div><div>●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>天秤座</div><div>Ｏ</div><div>纖細</div><div></div><div></div></div>
           <div class="List36"><div>1</div><div>01</div><div>20</div><div><img src="pic/w/w001.png" loading="lazy"/></div><div>阿爾妲</div><div>里斯本</div><div>1462</div><div>1480-1502</div><div>●</div><div>●</div><div>●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>巨蟹座</div><div>Ｂ</div><div>光明磊落</div><div></div><div></div></div>
           <div class="List36"><div>2</div><div>02</div><div>20</div><div><img src="pic/w/w002.png" loading="lazy"/></div><div>露西亞</div><div>里斯本</div><div>1507</div><div>1522-1547</div><div>●</div><div>●</div><div>●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>射手座</div><div>Ｏ</div><div>強硬</div><div><img src="pic/sea2/sea2-g002a.jpg" loading="lazy"/></div><div>里斯本：路琪亞</div></div>
           <div class="List36"><div>3</div><div>03</div><div>20</div><div><img src="pic/w/w003.png" loading="lazy"/></div><div>愛蕾歐諾拉</div><div>奧波土</div><div>1475</div><div>1490-1515</div><div>●</div><div>●</div><div></div><div>●</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>水瓶座</div><div>Ａ</div><div>善良</div><div></div><div></div></div>
@@ -7514,9 +7526,10 @@
       </div>
       
       <input type="radio" name="tab-36sub" id="tab-36sub02">
-      <label for="tab-36sub02" data-filtertype="subTab">地中海的談情說愛情話集</label>
+      <label for="tab-36sub02" data-filtertype="subTab">談情說愛情話集</label>
       <div class="subTab-content2">
-        <div class="desc">
+        <a href="#ID36sub02" class="go-to-top"></a>
+        <div class="desc" id="ID36sub02">
           <div class="text0">當進入某些城市的酒館時，主角會看見檯上放著一本書，只要作出正確的選項便可將書據為己有。總共有以下八本：</div>
           <div class="text2">地中海的談情說愛情話集１（卡薩布蘭加 N33 W7）</div>
           <div class="text2">地中海的談情說愛情話集２（馬賽 N42 W5）</div>
@@ -9943,36 +9956,32 @@
   </div>
   
   
-  <input type="radio" name="tab" id="tab-58"><!-- 58-59 -->
-  <label for="tab-58" data-filtertype="mainTab">發現</label>
+  <input type="radio" name="tab" id="tab-58"><!-- 58 -->
+  <label for="tab-58" data-filtertype="mainTab">發現介紹</label>
   <div class="tab-content">
     <div class="subTabs">
       <input type="radio" name="tab-58sub" id="tab-58sub00">
       <label for="tab-58sub00" data-filtertype="subTab">說明</label>
       <div class="subTab-content2 aRemoveUnderLine">
         <div class="desc">
-          <div class="title2"><span>介紹</span>（地理、歷史、寶物、宗教、交易品、迷信、生物、民族）：</div>
+          <div class="title2"><span>發現物介紹</span>（地理、歷史、寶物、宗教、交易品、迷信、生物、民族）：</div>
           <div class="text2">本分頁資料內容來自「<span>大航海时代3航海宝典</span>」（現在網路上已找不到相關連結），後又發現於「<a target="_blank" rel="noreferrer noopener" href="https://seicing.com/html/index-unchartedwaters2.html">肥猫的秘密基地</a>」也有相同內容。</div>
           <div class="text2">依此資料（根據裡面的內容，生物篇的作者為「奥尔菲斯」，其餘為「toasc」）為基礎，將此簡體中文資料轉正體中文，再重新整理和修正內容，內容包含 Wikipedia 的連結，請自行參考對照。</div>
           <div class="text2">內容提到的城市名稱，都盡量採取遊戲中的城市譯名。</div>
           <div class="text2">圖片來源除「查特理斯大教堂」和「卡巴神殿」以外，皆來自「肥猫的秘密基地」，因來源不明，不再另外標註來源和作者。</div>
-
-          <div class="title2"><span>流程</span>：</div>
-          <div class="text2">將穆帝國、太陽帝國、黃金帝國這三個發現物的相關流程整理成圖表呈現。</div>
-          
-          <div class="title2"><span>劇情</span>（宗教類、歐洲/近東、穆帝國、地理發現、非洲、中美/北美、南美、中東/南亞/東南亞、東亞、太平洋）：</div>
-          <div class="text2">整理各發現物的劇情對話。依照簡體中文資料轉正體中文後，再根據自己遊玩的資料做校正（<span>未仔細校正，需要再花時間重新檢查</span>）。</div>
-          <div class="text2">大致上依照區域分類，但將歐洲地區的宗教發現、穆帝國相關的發現物，以及需要簽約才能進行的地理發現獨立成不同分頁。</div>
-          <div class="text2">標記為副官的句子，在無副官的時候為水手所說。標記為監察官的句子，只有在隊伍有監察官的情況下出現。</div>
         </div>
       </div>
       
-      <label data-filtertype="subTabDesc">介紹（</label>
-      
-      <input type="radio" name="tab-58sub" id="tab-58sub01"><!-- 58 -->
+      <input type="radio" name="tab-58sub" id="tab-58sub01" checked="checked"><!-- 58 -->
       <label for="tab-58sub01" data-filtertype="subTab">地理</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <input type="checkbox" id="tab-58sub01m" data-type="OpenMenu"><label class="OpenMenu" for="tab-58sub01m"></label>
+        <div>
+          <div>好望角</div>
+          <div>新大陸</div>
+        </div>
+        <div class="Table58" id="ID58sub01">
+          <a href="#ID58sub01" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i101.jpg" loading="lazy" width="290"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%A5%BD%E6%9C%9B%E8%A7%92">好望角</a></span>（Cape of Good Hope）：位於南緯34度21分、東經18度30分處，是一條長約4.8公里的石質岬角，也是<a target="_blank" rel=" noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%9D%9E%E6%B4%B2">非洲</a>大陸的最西南端，今屬<a target="_blank" rel=" noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8D%97%E9%9D%9E">南非</a>領土，其北端距<a target="_blank" rel=" noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%96%8B%E6%99%AE%E6%95%A6">開普敦</a>約50公里。</div>
             <div class="text2">雖然在遊戲中號稱「非洲南端」，但實際上非洲的最南端應為其東邊數百公里處的<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8E%84%E5%8A%A0%E5%8B%92%E6%96%AF%E8%A7%92">厄加勒斯角</a>（Cape Agulhas，南緯34度49分）。</div>
@@ -10107,7 +10116,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub02"><!-- 58 -->
       <label for="tab-58sub02" data-filtertype="subTab">歷史</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub02">
+          <a href="#ID58sub02" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i201.jpg" loading="lazy" width="330"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8D%A1%E7%BA%B3%E5%85%8B%E5%B7%A8%E7%9F%B3%E6%9E%97">卡奈克巨石群</a></span>：一般譯為卡納克（Carnac），是位於<a target="_blank" rel=" noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E6%B3%95%E5%9B%BD">法國</a>西北<a target="_blank" rel=" noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B8%83%E5%88%97%E5%A1%94%E5%B0%BC%E5%8D%8A%E5%B2%9B">布列塔尼半島</a>上的一座濱海小城。據說，卡納克石陣曾有石柱10000根，如今僅存2471根。石陣被農田分為三片：</div>
             <div class="text4">位於卡納克城北1.5千公尺處的每乃克石陣，以11排向東延伸，共1099塊石頭，排列在長1千公尺、寬100公尺的矩形內，最高的巨石露出地面部分達4.2公尺。石柱行列稍有彎曲，柱與柱間距離不一。起點石柱高約4公尺，最高7公尺，愈往東愈低愈小。</div>
@@ -10331,7 +10341,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub03"><!-- 58 -->
       <label for="tab-58sub03" data-filtertype="subTab">寶物</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub03">
+          <a href="#ID58sub03" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i301.jpg" loading="lazy" width="235"/></div><div>
             <div class="text0-indent2"><span>薩杜夫的頭盔</span>：英國史詩《<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E8%B2%9D%E5%A5%A7%E6%AD%A6%E5%A4%AB">貝奧武夫</a>》（Beowulf）成書約於8世紀，現存手抄本約成於10世紀末。史詩全長3182行，用古英語寫成，是古英語詩歌中最長、最完整的作品，同時也是繼古希臘、羅馬史詩之後歐洲記錄得最早的一部以本民族語言寫成的史詩作品。</div>
             <div class="text2">作品由兩個故事組成，第一個故事講述的是貝奧武夫幫助丹麥王荷羅斯加戰勝半人半獸怪物<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%A0%BC%E4%BC%A6%E6%88%B4%E5%B0%94">格倫戴爾</a>（Grendel，遊戲中譯為格連迪爾）及其母親的故事。</div>
@@ -10470,7 +10481,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub04"><!-- 58 -->
       <label for="tab-58sub04" data-filtertype="subTab">宗教</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub04">
+          <a href="#ID58sub04" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i401.jpg" loading="lazy" width="340"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E7%86%B1%E7%BE%85%E5%B0%BC%E8%8E%AB%E6%96%AF%E4%BF%AE%E9%81%93%E9%99%A2">傑羅尼莫修道院</a></span>（Mosteiro dos Jerónimos）：西元1502年，葡萄牙國王<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%9B%BC%E5%8A%AA%E5%9F%83%E5%B0%94%E4%B8%80%E4%B8%96_(%E8%91%A1%E8%90%84%E7%89%99)">曼努埃爾</a>用來自印度的黃金，在<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%87%8C%E6%96%AF%E6%9C%AC">里斯本</a><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%A1%94%E9%9C%8D%E6%B2%B3">太加斯河</a>岸建造了一座龐大而豪華的修道院。</div>
             <div class="text2">這座修道院的完工標示著新的建築式樣的出現。這種建築風格的裝飾以海洋為主題，窗戶周圍和廊柱上雕刻著海浪、貝殼、遠航的船隻、航海儀器、遠方奇異的海洋生物和植物等等。因為這種建築風格始於曼努埃爾統治時期，所以被稱為「曼努埃爾風格」（estilo manuelino）。今天這座修道院裡面安放著四個人的遺體：</div>
@@ -10707,7 +10719,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub05"><!-- 58 -->
       <label for="tab-58sub05" data-filtertype="subTab">交易品</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub05">
+          <a href="#ID58sub05" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i501.jpg" loading="lazy" width="330"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%B0%B4%E7%A8%BB">稻米</a></span>（Oryza sativa）：即水稻，是一年生至二年生的<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%A6%BE%E6%9C%AC%E7%A7%91">禾本科</a><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%A8%BB%E4%BA%9A%E7%A7%91">稻亞科</a><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%A8%BB%E5%B1%9E">稻屬</a>植物，穗為圓錐花序，自花授粉，穎果。稈直立，高30-100公分。葉二列互生，線狀披針形，葉舌膜質，2裂。水稻除食用穎果外，可製澱粉、釀酒、製醋，米糠可製糖、榨油、提取糠醛，供工業及醫藥用；稻桿為良好飼料及造紙原料和編織材料，谷芽和稻根可供藥用。</div>
             <div class="text2">依分類學而言，亞洲型栽培稻大致可區分為<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%B1%BC%E7%A8%BB">秈稻</a>（indica）、<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%B2%B3%E7%A8%BB">粳稻</a>（japonica，溫帶粳稻）與<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%88%AA%E5%93%87%E7%A8%BB">爪哇稻</a>（javanica，熱帶粳稻）三個亞種。全世界有半數以上人口以水稻為主食。</div>
@@ -10894,7 +10907,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub06"><!-- 58 -->
       <label for="tab-58sub06" data-filtertype="subTab">迷信</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub06">
+          <a href="#ID58sub06" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i601.jpg" loading="lazy" width="330"/><div class="textA">圖為丘奇沃德繪製的穆帝國疆域假想圖。</div></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%A7%86%E5%A4%A7%E9%99%86">穆帝國</a></span>（Mu）：又稱姆帝國或姆大陸。它的提出正如遊戲中的線索一樣，是由<a target="_blank" rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Madrid_Codex_(Maya)">特洛阿農古抄本</a>（Troano Codex，一般譯為特洛亞諾）中得到的。</div>
             <div class="text2">這是西班牙人在征服美洲並破壞當地文化後，所保存下來的為數不多的珍貴古籍，為一部地震、火山爆發、洪水泛濫的編年史，但由於人們對馬雅文字所知甚少，加上記錄混亂不堪，所以一直躺在馬德里的美洲博物館（<a target="_blank" rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Museo_de_Am%C3%A9rica">Museo de América</a>）裡無人問津。一直到1864年，法國學者 <a target="_blank" rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Charles_%C3%89tienne_Brasseur_de_Bourbourg">Bourbourg</a> 來到西班牙研究馬雅藝術品時，才注意到它，並為它取了「特洛阿農」（Troano）這個名字。</div>
@@ -11044,7 +11058,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub07"><!-- 58 -->
       <label for="tab-58sub07" data-filtertype="subTab">生物</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub07">
+          <a href="#ID58sub07" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i701.jpg" loading="lazy" width="330"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8C%97%E6%A5%B5%E7%86%8A">北極熊</a></span>（Ursus maritimus）：屬於<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E5%93%BA%E4%B9%B3%E5%8A%A8%E7%89%A9">哺乳綱</a><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E9%A3%9F%E8%82%89%E7%9B%AE">食肉目</a><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/wiki/%E7%86%8A%E7%A7%91">熊科</a>，又稱白熊，是在北極圈裡土生土長的熊，是陸上最龐大的肉食動物。北極熊是一種圍繞極地生存的動物，其活動範圍主要在<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8C%97%E5%86%B0%E6%B4%8B">北冰洋</a>附近，而最南則可以在有浮冰出沒的地方找到他們（目前找到他們的最南點為<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%8A%A0%E6%8B%BF%E5%A4%A7">加拿大</a>的<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E8%A9%B9%E5%A7%86%E6%96%AF%E7%81%A3">詹姆士灣</a>），而最北可以在北緯88度找到他們，而且有證據顯示他們會橫越北極點。</div>
             <div class="text2">化石與DNA的證據顯示，北極熊這個物種大約是在距今20萬年前從棕熊物種中分離出來，因此可把棕熊視為他的近親。</div>
@@ -11294,7 +11309,8 @@
       <input type="radio" name="tab-58sub" id="tab-58sub08"><!-- 58 -->
       <label for="tab-58sub08" data-filtertype="subTab">民族</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="Table58">
+        <div class="Table58" id="ID58sub08">
+          <a href="#ID58sub08" class="go-to-top"></a>
           <div class="List58"><div><img src="pic/i/i801.jpg" loading="lazy" width="340"/></div><div>
             <div class="text0-indent2"><span><a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%9D%B0%E5%86%85%E5%A4%A7%E6%B8%85%E7%9C%9F%E5%AF%BA">泥清真寺</a></span>：被世人美喻為「尼日河谷的寶石」的<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%9D%B0%E5%86%85">傑內</a>（Djenné）古城，坐落在<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B0%BC%E6%97%A5%E5%B0%94%E6%B2%B3">尼日河</a>與<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E5%B0%BC%E6%B2%B3">巴尼河</a>交匯處，今<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%A9%AC%E9%87%8C">馬利共和國</a>境內。在14-16世紀末被摩洛哥軍征服前，這裡是西非最為美麗的商業城。傑內古城始建於西元前2世紀，出土的文物有西元前3世紀的石器、鐵器以及手鐲等裝飾品。</div>
             <div class="text2">在傑內古城西南3公里處的<a target="_blank" rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Djenn%C3%A9-Djenno">傑內．朱諾</a>（Djenné-Djenno，又稱「舊珍納」）可能是撒哈拉以南非洲的最古老的城市。從西元14世紀起，傑內先後被<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E9%A9%AC%E9%87%8C%E5%B8%9D%E5%9B%BD">馬利帝國</a>（Mali Empire）、<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%A1%91%E6%B5%B7%E5%B8%9D%E5%9B%BD">桑海帝國</a>（Empire of Songhai）和<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E6%91%A9%E6%B4%9B%E5%93%A5">摩洛哥</a>人所統治。1893年，法國人佔領了這座城市。</div>
@@ -11464,11 +11480,29 @@
           </div></div>
         </div>
       </div>
+    </div>
+  </div>
+  
+  <input type="radio" name="tab" id="tab-59"><!-- 59 -->
+  <label for="tab-59" data-filtertype="mainTab">發現劇情</label>
+  <div class="tab-content">
+    <div class="subTabs">
+      <input type="radio" name="tab-59sub" id="tab-59sub00">
+      <label for="tab-59sub00" data-filtertype="subTab">說明</label>
+      <div class="subTab-content2 aRemoveUnderLine">
+        <div class="desc">
+          <div class="title2"><span>流程</span>：</div>
+          <div class="text2">將穆帝國、太陽帝國、黃金帝國這三個發現物的相關流程整理成圖表呈現。</div>
+          
+          <div class="title2"><span>發現物劇情</span>（宗教類、歐洲/近東、穆帝國、地理發現、非洲、中美/北美、南美、中東/南亞/東南亞、東亞、太平洋）：</div>
+          <div class="text2">整理各發現物的劇情對話。依照簡體中文資料轉正體中文後，再根據自己遊玩的資料做校正（<span>未仔細校正，需要再花時間重新檢查</span>）。</div>
+          <div class="text2">大致上依照區域分類，但將歐洲地區的宗教發現、穆帝國相關的發現物，以及需要簽約才能進行的地理發現獨立成不同分頁。</div>
+          <div class="text2">標記為副官的句子，在無副官的時候為水手所說。標記為監察官的句子，只有在隊伍有監察官的情況下出現。</div>
+        </div>
+      </div>
       
-      <label data-filtertype="subTabDesc">）</label>
-      
-      <input type="radio" name="tab-58sub" id="tab-58sub09" checked="checked">
-      <label for="tab-58sub09" data-filtertype="subTab">流程</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub01" checked="checked">
+      <label for="tab-59sub01" data-filtertype="subTab">流程</label>
       <div class="subTab-content2">
         <div class="desc">
           <div class="text2X">
@@ -11976,10 +12010,8 @@
         </div>
       </div>
       
-      <label data-filtertype="subTabDesc">　劇情（</label>
-      
-      <input type="radio" name="tab-58sub" id="tab-58sub10"><!-- 59 -->
-      <label for="tab-58sub10" data-filtertype="subTab">宗教類</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub02"><!-- 59 -->
+      <label for="tab-59sub02" data-filtertype="subTab">宗教類</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_100">
           <div class="Table59a">
@@ -12184,8 +12216,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub11"><!-- 59 -->
-      <label for="tab-58sub11" data-filtertype="subTab">歐洲/近東</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub03"><!-- 59 -->
+      <label for="tab-59sub03" data-filtertype="subTab">歐洲/近東</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_200">
           <div class="Table59b">
@@ -12397,8 +12429,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub12"><!-- 59 -->
-      <label for="tab-58sub12" data-filtertype="subTab">穆帝國</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub04"><!-- 59 -->
+      <label for="tab-59sub04" data-filtertype="subTab">穆帝國</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_300">
           <div class="Table59c">
@@ -12640,8 +12672,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub13"><!-- 59 -->
-      <label for="tab-58sub13" data-filtertype="subTab">地理發現</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub05"><!-- 59 -->
+      <label for="tab-59sub05" data-filtertype="subTab">地理發現</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_400">
           <div class="Table59d">
@@ -12773,8 +12805,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub14"><!-- 59 -->
-      <label for="tab-58sub14" data-filtertype="subTab">非洲</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub06"><!-- 59 -->
+      <label for="tab-59sub06" data-filtertype="subTab">非洲</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_500">
           <div class="Table59e">
@@ -12945,8 +12977,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub15"><!-- 59 -->
-      <label for="tab-58sub15" data-filtertype="subTab">中美/北美</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub07"><!-- 59 -->
+      <label for="tab-59sub07" data-filtertype="subTab">中美/北美</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_600">
           <div class="Table59f">
@@ -13112,8 +13144,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub16"><!-- 59 -->
-      <label for="tab-58sub16" data-filtertype="subTab">南美</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub08"><!-- 59 -->
+      <label for="tab-59sub08" data-filtertype="subTab">南美</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_700">
           <div class="Table59g">
@@ -13312,8 +13344,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub17"><!-- 59 -->
-      <label for="tab-58sub17" data-filtertype="subTab">中東/南亞/東南亞</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub09"><!-- 59 -->
+      <label for="tab-59sub09" data-filtertype="subTab">中東/南亞/東南亞</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_800">
           <div class="Table59h">
@@ -13489,8 +13521,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub18"><!-- 59 -->
-      <label for="tab-58sub18" data-filtertype="subTab">東亞</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub10"><!-- 59 -->
+      <label for="tab-59sub10" data-filtertype="subTab">東亞</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_900">
           <div class="Table59i">
@@ -13698,8 +13730,8 @@
         </div>
       </div>
       
-      <input type="radio" name="tab-58sub" id="tab-58sub19"><!-- 59 -->
-      <label for="tab-58sub19" data-filtertype="subTab">太平洋</label>
+      <input type="radio" name="tab-59sub" id="tab-59sub11"><!-- 59 -->
+      <label for="tab-59sub11" data-filtertype="subTab">太平洋</label>
       <div class="subTab-content2">
         <div class="desc aRemoveUnderLine" id="E_1000">
           <div class="Table59j">
@@ -13847,8 +13879,6 @@
           <div class="text4"><span>註：皮伽索斯即Pégasos，一般譯為<a target="_blank" rel="noreferrer noopener" href="https://zh.wikipedia.org/zh-tw/%E7%8F%80%E4%BC%BD%E7%B4%A2%E6%96%AF">佩加索斯</a>。</span></div>
         </div>
       </div>
-      
-      <label data-filtertype="subTabDesc">）</label>
     </div>
   </div>
   
@@ -16794,8 +16824,9 @@
       <input type="radio" name="tab-65sub" id="tab-65sub05">
       <label for="tab-65sub05" data-filtertype="subTab">伊比利半島</label>
       <div class="subTab-content2 aRemoveUnderLine">
+        <a href="#ID65sub05" class="go-to-top"></a>
         <div class="Table65">
-          <div class="List65">
+          <div class="List65" id="ID65sub05">
             <div><img src="pic/o/o_map_Iberian_0700.png" loading="lazy"/></div>
             <div>
               <div>西元700年地圖（<a target="_blank" rel="noreferrer noopener" href="https://commons.wikimedia.org/w/index.php?curid=1988725">圖片來源</a>）</div>
@@ -17069,7 +17100,8 @@
       <input type="radio" name="tab-66sub" id="tab-66sub06">
       <label for="tab-66sub06" data-filtertype="subTab">航線</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="desc">
+        <a href="#ID66sub06" class="go-to-top"></a>
+        <div class="desc" id="ID66sub06">
           <div class="text0">迪亞士（人物編號000）發現好望角的航線：（<a target="_blank" rel="noreferrer noopener" href="https://kids.britannica.com/students/article/exploration-of-Africa/543378">圖片來源</a>）</div>
           <div class="text2"><img src="pic/o/o_Route_01_Dias.webp" loading="lazy" width="450"/></div>
           <div class="text0"><hr/></div>
@@ -19143,8 +19175,8 @@
           <div class="text2">使用「初玩者用」的葡萄牙角色埃米利歐，簽約「聖米歇爾山」並發現該發現物後，去里斯本的貴族府邸，或是去華沙的天文學研究所，副官會說出「我們在期限內完成了。司令官也一定會很高興的。」，即分頁「事件」→「埃米利歐開場」內，「★第一次發現以後，回到宅邸（貴族府邸）報告」的內容。</div>
           
           <div class="title2">重複取得環球航線的証物</div>
-          <div class="text2">當繞地球一圈時，先不要向贊助人報告，在港裡存檔，讀檔，就會發現航海報告多了一份。</div>
-          <div class="text2">若是反覆存檔讀檔，就會越來越多，很快就發財了。</div>
+          <div class="text2">當繞地球一圈時，會取得兩份証物。</div>
+          <div class="text2">繞地球一圈後回到母港後，先不要向贊助人報告，存檔然後讀檔，就會發現航海報告多了一份。若是反覆存檔讀檔，就會越來越多，很快就發財了。</div>
           
           <div class="title2">景教發現物問題</div>
           <div class="text2">「祐國寺鐵塔」和「景教十字架」是一起發現的發現物，但若簽約「景教」，然後向贊助人報告時，只會報告「景教十字架」。</div>
@@ -19581,20 +19613,20 @@
   </div>
   
   
-  <input type="radio" name="tab" id="tab-94"><!-- 94-95 (iframe) -->
-  <label for="tab-94" data-filtertype="mainTab">遊戲紀錄</label>
+  <input type="radio" name="tab" id="tab-93"><!-- 94-95 (iframe) -->
+  <label for="tab-93" data-filtertype="mainTab">遊戲紀錄</label>
   <div class="tab-content">
     <div class="subTabs">
-      <input type="radio" name="tab-94sub" id="tab-94sub00">
-      <label for="tab-94sub00" data-filtertype="subTab">說明</label>
+      <input type="radio" name="tab-93sub" id="tab-93sub00">
+      <label for="tab-93sub00" data-filtertype="subTab">說明</label>
       <div class="subTab-content2">
-      
       </div>
       
-      <input type="radio" name="tab-94sub" id="tab-94sub01" checked="checked">
-      <label for="tab-94sub01" data-filtertype="subTab">區域探索</label>
+      <input type="radio" name="tab-93sub" id="tab-93sub01" checked="checked">
+      <label for="tab-93sub01" data-filtertype="subTab">區域探索</label>
       <div class="subTab-content2 aRemoveUnderLine">
-        <div class="desc text-justify">
+        <a href="#ID94sub01" class="go-to-top"></a>
+        <div class="desc text-justify" id="ID94sub01">
           <div class="text0">資料來源：<a target="_blank" rel="noreferrer noopener" href="http://www.bjsyouth.cn/forum.php?mod=viewthread&tid=11131">大航海时代3区域探索的心得</a> by 玄裾衣风（將原文由簡體中文資料轉正體中文，再重新整理和修正內容後列於下）</div>
           <p class="text0">區域探索只是提供一種可行的遊戲方式。遊戲裡面有各種樂趣和遊戲方式，區域探索或許只是其中一種。希望不要引起誤會，這決不是說遊戲只能如此進行。區域探索只是希望在較短的時間內，盡可能發現更多的發現。具體心得如下，請方家指正。</p>
           <p class="text0">一、區域探索的原則</p>
@@ -19937,20 +19969,20 @@
       
       <label data-filtertype="subTabDesc">　我的紀錄（</label>
       
-      <input type="radio" name="tab-94sub" id="tab-94sub02a">
-      <label for="tab-94sub02a" data-filtertype="subTab">01</label>
+      <input type="radio" name="tab-93sub" id="tab-93sub02a">
+      <label for="tab-93sub02a" data-filtertype="subTab">01</label>
       <div class="subTab-content">
         <iframe src="sea3record1.htm" loading="lazy" scrolling="no"></iframe>
       </div>
       
-      <input type="radio" name="tab-94sub" id="tab-94sub02b">
-      <label for="tab-94sub02b" data-filtertype="subTab">02</label>
+      <input type="radio" name="tab-93sub" id="tab-93sub02b">
+      <label for="tab-93sub02b" data-filtertype="subTab">02</label>
       <div class="subTab-content">
         <!--iframe src="sea3record2.htm" loading="lazy" scrolling="no"></iframe-->
       </div>
       
-      <input type="radio" name="tab-94sub" id="tab-94sub02c">
-      <label for="tab-94sub02c" data-filtertype="subTab">03</label>
+      <input type="radio" name="tab-93sub" id="tab-93sub02c">
+      <label for="tab-93sub02c" data-filtertype="subTab">03</label>
       <div class="subTab-content">
       </div>
       
@@ -21167,6 +21199,36 @@
           <div class="List97"><div>2026/06/04</div><div>修改</div><div>「遊戲進行」</div><div>調整版面配置，並增加部分內容</div></div>
           <div class="List97"><div></div><div>修改</div><div>「技能」</div><div>頁籤選項變成「對話（行會/教堂/學者府邸）」</div></div>
           <div class="List97"><div></div><div>修改</div><div>「交易」→「交易所對話」</div><div>將名稱從「交易所」變更為「交易所對話」</div></div>
+          <div class="List97"><div>2026/07/07</div><div>修改</div><div>「酒館旅館」→「談情說愛情話集」</div><div>「地中海的談情說愛情話集」變更為「談情說愛情話集」</div></div>
+          <div class="List97"><div></div><div>新增</div><div>「發現劇情」</div><div>將「發現」下的「流程」和「劇情」移至此新的頁籤之下</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」</div><div>將「發現」更名為「發現介紹」</div></div>
+          <div class="List97"><div></div><div>新增</div><div>「發現劇情」→「說明」</div><div>將「發現介紹」→「說明」內關於「流程」和「劇情」移至此處</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「說明」</div><div>將內容關於「流程」和「劇情」刪除</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「地理」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「歷史」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「寶物」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「宗教」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「交易品」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「迷信」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「生物」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「發現介紹」→「民族」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「年表」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「城市」→「歷史事件年表」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「城市」→「城市遠眺路人」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「城市」→「酒館旅館路人」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「交易」→「販賣奴隸」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「人物」→「人物簡介」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「酒館旅館」→「酒館女郎」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「酒館旅館」→「談情說愛情話集」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「地圖」→「伊比利半島」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「航線」→「航線」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「遊戲紀錄」→「區域探索」</div><div>增加「回到頂部」按鈕</div></div>
+          <div class="List97"><div>2026/07/08</div><div>修改</div><div>「城市」→「城市列表」</div><div>修正錯別字：烟草->煙草</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「交易」→「交易品價格」</div><div>修正錯別字：烟草->煙草</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「交易」→「地域交易品」</div><div>修正錯別字：烟草->煙草</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「交易」→「城市交易品列表」</div><div>修正錯別字：烟草->煙草</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「遊戲進行」→「探險須知」</div><div>增加說明內容</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「其他」→「bug」</div><div>增加環球航線的說明</div></div>
         </div>
       </div>
       
@@ -21278,101 +21340,102 @@
           <div class="List98">
             <div>Main Menu</div><div>MainTab</div><div>Sub Menu</div><div>Checked</div><div>SubTab</div>
             <div>ID</div><div>Height</div><div>Header</div><div>Table</div><div>List</div>
-            <div>Filter</div><div>Switch Col</div><div>Split</div><div>iframe</div><div>Others</div>
+            <div>Filter</div><div>Switch Col</div><div>Split</div><div>Button</div><div>Others</div>
           </div>
         </div>
         <div class="Table98">
-          <div class="List98" colorFilter="B 0 H" lineFilter="A B C D"><div>1</div><div>簡介</div><div>tab-content2</div><div></div><div></div><div></div><div></div><div>1</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1 H" lineFilter="A B C D"><div>2</div><div>遊戲進行</div><div>tab-content</div><div></div><div></div><div></div><div></div><div>2</div><div></div><div></div><div>Table02</div><div>List02</div><div></div><div></div><div>YES</div><div></div><div>tab-02t, TableA, ListA1</div></div>
-          <div class="List98" colorFilter="B 2 H" lineFilter="A B C D"><div>5</div><div>年表</div><div>tab-content</div><div></div><div></div><div></div><div></div><div>5</div><div>Table05Height</div><div>Header05</div><div>Table05</div><div>List05</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>6</div><div>城市</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA2</div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>國家</div><div></div><div>subTab-content</div><div>6</div><div>Table06Height</div><div>Header06</div><div>Table06</div><div>List06</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>城市圖片</div><div></div><div>subTab-content2</div><div>7</div><div></div><div></div><div>Table07</div><div>List07</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>城市列表</div><div>checked</div><div>subTab-content</div><div>8</div><div>Table08Height</div><div>Header08</div><div>Table08</div><div>List08</div><div>Filter08</div><div>tab-06sub03s</div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>歷史事件年表</div><div></div><div>subTab-content</div><div>9</div><div>Table09Height</div><div>Header09</div><div>Table09</div><div>List09</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>城市遠眺路人</div><div></div><div>subTab-content2</div><div>10</div><div></div><div></div><div>Table10</div><div>List10</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>酒館旅館路人</div><div></div><div>subTab-content2</div><div>11</div><div></div><div></div><div>Table11</div><div>List11</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div>攻打國家</div><div></div><div>subTab-content2</div><div>12</div><div></div><div>Header12</div><div>Table12</div><div>List12</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>08a</div><div>攻打國家（城市1）</div><div></div><div>subTab-content</div><div>13</div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13a</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>08b</div><div>攻打國家（城市2）</div><div></div><div>subTab-content</div><div></div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13b</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>08c</div><div>攻打國家（城市3）</div><div></div><div>subTab-content</div><div></div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13c</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>09</div><div>城市禁入</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="A B C D"><div></div><div></div><div></div><div>10</div><div>城市場景</div><div></div><div>subTab-content</div><div>14</div><div></div><div></div><div>Table14</div><div></div><div></div><div></div><div>YES</div><div></div><div>tab-06sub10t</div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div>16</div><div>市集</div><div>tab-content</div><div>01</div><div>市集</div><div>checked</div><div>subTab-content</div><div>16</div><div>Table16Height</div><div>Header16</div><div>Table16</div><div>List16</div><div>Filter16</div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>02</div><div>對話</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div>18</div><div>技能</div><div>tab-content</div><div>01</div><div>學習地點</div><div>checked</div><div>subTab-content</div><div>18</div><div>Table18Height</div><div>Header18</div><div>Table18</div><div>List18</div><div>Filter18</div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>學習時間</div><div></div><div>subTab-content2</div><div>19</div><div></div><div></div><div>Table19</div><div>List19</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>03a</div><div>對話（行會）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>03b</div><div>對話（教堂）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="A B C D"><div></div><div></div><div></div><div>03c</div><div>對話（學者府邸）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>20</div><div>物品</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>物品列表</div><div>checked</div><div>subTab-content</div><div>20</div><div>Table20Height</div><div>Header20</div><div>Table20</div><div>List20</div><div>tab-20sub01</div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>圖片</div><div></div><div>subTab-content</div><div>21</div><div>Table21Height</div><div></div><div>Table21</div><div>List21</div><div></div><div></div><div></div><div></div><div>List21c, List21d, List21f</div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="A B C D"><div></div><div></div><div></div><div>03</div><div>圖片2</div><div></div><div>subTab-content</div><div>22</div><div>Table22Height</div><div></div><div>Table22</div><div>List22</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>25</div><div>交易</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA1, ListA3</div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>交易品圖片</div><div></div><div>subTab-content</div><div>25</div><div>Table25Height</div><div></div><div>Table25</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>02</div><div>交易品價格</div><div></div><div>subTab-content</div><div>26</div><div>Table26Height</div><div>Header26</div><div>Table26</div><div>List26</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>地域交易品</div><div></div><div>subTab-content</div><div></div><div>Table26Height</div><div>Header26</div><div>Table26</div><div>List26</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>城市交易品列表</div><div>checked</div><div>subTab-content</div><div>27</div><div>Table27Height</div><div>Header27</div><div>Table27</div><div>List27</div><div></div><div>tab-25sub04s</div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>商路</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>交易所對話</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="A B C D"><div></div><div></div><div></div><div>07</div><div>販賣奴隸</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>31</div><div>人物</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>人物列表</div><div>checked</div><div>subTab-content</div><div>31</div><div>Table31Height</div><div>Header31</div><div>Table31</div><div>List31</div><div>Filter31</div><div></div><div></div><div></div><div>List31a, List31b, List31h</div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>人物簡介</div><div></div><div>subTab-content</div><div>32</div><div>Table32Height</div><div>Header32</div><div>Table32</div><div>List32</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>人物簡介2</div><div></div><div>subTab-content</div><div>33</div><div>Table32Height</div><div>Header33</div><div>Table33</div><div>List33</div><div></div><div></div><div></div><div></div><div>List33a, List33b</div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>04</div><div>法雷爾家族</div><div></div><div>subTab-content2</div><div>34</div><div></div><div></div><div></div><div></div><div></div><div></div><div>YES</div><div></div><div>tab-31sub04t</div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>36</div><div>酒館旅館</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>酒館女郎</div><div>checked</div><div>subTab-content</div><div>36</div><div>Table36Height</div><div>Header36</div><div>Table36</div><div>List36</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>地中海的談情說愛情話集</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>情話集內容</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>酒的價格</div><div></div><div>subTab-content2</div><div>37</div><div></div><div>Header37</div><div>Table37</div><div>List37</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>醉酒事件</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>09</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="A B C D"><div></div><div></div><div></div><div>10</div><div>旅館</div><div></div><div>subTab-content2</div><div>40</div><div></div><div></div><div>Table40</div><div>List40</div><div></div><div></div><div>YES</div><div></div><div>ListB</div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>41</div><div>線索</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>圖書館</div><div>checked</div><div>subTab-content</div><div>41</div><div>Table41Height</div><div>Header41</div><div>Table41</div><div>List41</div><div>Filter41</div><div>tab-41sub01s</div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>其他書籍</div><div></div><div>subTab-content</div><div>42</div><div>Table42Height</div><div>Header42</div><div>Table42</div><div>List42</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>線索內容</div><div></div><div>subTab-content</div><div>43</div><div>Table43Height</div><div>Header43</div><div>Table43</div><div>List43</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>線索插圖</div><div></div><div>subTab-content2</div><div>44</div><div></div><div></div><div>Table44</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="A B C D"><div></div><div></div><div></div><div>05</div><div>酒館情報</div><div></div><div>subTab-content</div><div>45</div><div>Table45Height</div><div>Header45</div><div>Table45</div><div>List45</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>47</div><div>贊助</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>贊助人</div><div>checked</div><div>subTab-content</div><div>47</div><div>Table47Height</div><div>Header47</div><div>Table47</div><div>List47</div><div>Filter47</div><div>tab-47sub01s</div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>51</div><div>百科</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>百科全書</div><div>checked</div><div>subTab-content</div><div>51</div><div>Table51Height</div><div>Header51</div><div>Table51</div><div>List51</div><div>tab-51sub01</div><div>tab-51sub01s</div><div></div><div></div><div>List51a, List51b, List51c</div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>贗品</div><div></div><div>subTab-content</div><div>52</div><div>Table52Height</div><div>Header52</div><div>Table52</div><div>List52</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>其他</div><div></div><div>subTab-content2</div><div>53</div><div></div><div>Header53</div><div>Table53</div><div>List53</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>素描插圖</div><div></div><div>subTab-content2</div><div>54</div><div></div><div></div><div>Table54</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>發現動畫</div><div></div><div>subTab-content2</div><div>55</div><div></div><div></div><div>Table55</div><div>List55</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div>發現物年表</div><div></div><div>subTab-content</div><div>56</div><div>Table56Height</div><div>Header56</div><div>Table56</div><div>List56</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>58</div><div>發現</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>01</div><div>介紹（地理）</div><div></div><div>subTab-content2</div><div>58</div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>02</div><div>介紹（歷史）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>03</div><div>介紹（寶物）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>04</div><div>介紹（宗教）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>05</div><div>介紹（交易品）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>06</div><div>介紹（迷信）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B D"><div></div><div></div><div></div><div>07</div><div>介紹（生物）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div>介紹（民族）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>09</div><div>流程</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>svg</div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>10</div><div>劇情（宗教類）</div><div></div><div>subTab-content2</div><div>59</div><div></div><div></div><div>Table59a</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>11</div><div>劇情（歐洲/近東）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59b</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>12</div><div>劇情（穆帝國）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59c</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>13</div><div>劇情（地理發現）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59d</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>14</div><div>劇情（非洲）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59e</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>15</div><div>劇情（中美/北美）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59f</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>16</div><div>劇情（南美）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59g</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>17</div><div>劇情（中東/南亞/東南亞）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59h</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>18</div><div>劇情（東亞）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59i</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="A B C D"><div></div><div></div><div></div><div>19</div><div>劇情（太平洋）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59j</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0 H" lineFilter="A B C D"><div>1</div><div>簡介</div><div>tab-content2</div><div></div><div></div><div></div><div></div><div>1</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1 H" lineFilter="A B C D"><div>2</div><div>遊戲進行</div><div>tab-content</div><div></div><div></div><div></div><div></div><div>2</div><div></div><div></div><div>Table02</div><div>List02</div><div></div><div></div><div>tab-02t</div><div></div><div>TableA, ListA1</div></div>
+          <div class="List98" colorFilter="A 2 H" lineFilter="A B C D"><div>5</div><div>年表</div><div>tab-content</div><div></div><div></div><div></div><div></div><div>5</div><div>Table05Height</div><div>Header05</div><div>Table05</div><div>List05</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>6</div><div>城市</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA2</div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>國家</div><div></div><div>subTab-content</div><div>6</div><div>Table06Height</div><div>Header06</div><div>Table06</div><div>List06</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>城市圖片</div><div></div><div>subTab-content2</div><div>7</div><div></div><div></div><div>Table07</div><div>List07</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>城市列表</div><div>checked</div><div>subTab-content</div><div>8</div><div>Table08Height</div><div>Header08</div><div>Table08</div><div>List08</div><div>Filter08</div><div>tab-06sub03s</div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>歷史事件年表</div><div></div><div>subTab-content</div><div>9</div><div>Table09Height</div><div>Header09</div><div>Table09</div><div>List09</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>城市遠眺路人</div><div></div><div>subTab-content2</div><div>10</div><div></div><div></div><div>Table10</div><div>List10</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>酒館旅館路人</div><div></div><div>subTab-content2</div><div>11</div><div></div><div></div><div>Table11</div><div>List11</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div>攻打國家</div><div></div><div>subTab-content2</div><div>12</div><div></div><div>Header12</div><div>Table12</div><div>List12</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B D"><div></div><div></div><div></div><div>08a</div><div>攻打國家（城市1）</div><div></div><div>subTab-content</div><div>13</div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13a</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B D"><div></div><div></div><div></div><div>08b</div><div>攻打國家（城市2）</div><div></div><div>subTab-content</div><div></div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13b</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>08c</div><div>攻打國家（城市3）</div><div></div><div>subTab-content</div><div></div><div>Table13Height</div><div>Header13</div><div>Table13</div><div>List13c</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>09</div><div>城市禁入</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="A B C D"><div></div><div></div><div></div><div>10</div><div>城市場景</div><div></div><div>subTab-content</div><div>14</div><div></div><div></div><div>Table14</div><div></div><div></div><div></div><div>tab-06sub10t</div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div>16</div><div>市集</div><div>tab-content</div><div>01</div><div>市集</div><div>checked</div><div>subTab-content</div><div>16</div><div>Table16Height</div><div>Header16</div><div>Table16</div><div>List16</div><div>Filter16</div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="A B C D"><div></div><div></div><div></div><div>02</div><div>對話</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div>18</div><div>技能</div><div>tab-content</div><div>01</div><div>學習地點</div><div>checked</div><div>subTab-content</div><div>18</div><div>Table18Height</div><div>Header18</div><div>Table18</div><div>List18</div><div>Filter18</div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>學習時間</div><div></div><div>subTab-content2</div><div>19</div><div></div><div></div><div>Table19</div><div>List19</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>03a</div><div>對話（行會）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>03b</div><div>對話（教堂）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>03c</div><div>對話（學者府邸）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>20</div><div>物品</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>物品列表</div><div>checked</div><div>subTab-content</div><div>20</div><div>Table20Height</div><div>Header20</div><div>Table20</div><div>List20</div><div>tab-20sub01</div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>圖片</div><div></div><div>subTab-content</div><div>21</div><div>Table21Height</div><div></div><div>Table21</div><div>List21</div><div></div><div></div><div></div><div></div><div>List21c, List21d, List21f</div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="A B C D"><div></div><div></div><div></div><div>03</div><div>圖片2</div><div></div><div>subTab-content</div><div>22</div><div>Table22Height</div><div></div><div>Table22</div><div>List22</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>25</div><div>交易</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA1, ListA3</div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>交易品圖片</div><div></div><div>subTab-content</div><div>25</div><div>Table25Height</div><div></div><div>Table25</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>02</div><div>交易品價格</div><div></div><div>subTab-content</div><div>26</div><div>Table26Height</div><div>Header26</div><div>Table26</div><div>List26</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>地域交易品</div><div></div><div>subTab-content</div><div></div><div>Table26Height</div><div>Header26</div><div>Table26</div><div>List26</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>城市交易品列表</div><div>checked</div><div>subTab-content</div><div>27</div><div>Table27Height</div><div>Header27</div><div>Table27</div><div>List27</div><div></div><div>tab-25sub04s</div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>商路</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>交易所對話</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>07</div><div>販賣奴隸</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>31</div><div>人物</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>人物列表</div><div>checked</div><div>subTab-content</div><div>31</div><div>Table31Height</div><div>Header31</div><div>Table31</div><div>List31</div><div>Filter31</div><div></div><div></div><div></div><div>List31a, List31b, List31h</div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>人物簡介</div><div></div><div>subTab-content</div><div>32</div><div>Table32Height</div><div>Header32</div><div>Table32</div><div>List32</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>人物簡介2</div><div></div><div>subTab-content</div><div>33</div><div>Table32Height</div><div>Header33</div><div>Table33</div><div>List33</div><div></div><div></div><div></div><div></div><div>List33a, List33b</div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="A B C D"><div></div><div></div><div></div><div>04</div><div>法雷爾家族</div><div></div><div>subTab-content2</div><div>34</div><div></div><div></div><div></div><div></div><div></div><div></div><div>tab-31sub04t</div><div></div><div>tab-31sub04t</div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>36</div><div>酒館旅館</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>酒館女郎</div><div>checked</div><div>subTab-content</div><div>36</div><div>Table36Height</div><div>Header36</div><div>Table36</div><div>List36</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>地中海的談情說愛情話集</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>情話集內容</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>酒的價格</div><div></div><div>subTab-content2</div><div>37</div><div></div><div>Header37</div><div>Table37</div><div>List37</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>醉酒事件</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>09</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="A B C D"><div></div><div></div><div></div><div>10</div><div>旅館</div><div></div><div>subTab-content2</div><div>40</div><div></div><div></div><div>Table40</div><div>List40</div><div></div><div></div><div>YES</div><div></div><div>ListB</div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>41</div><div>線索</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>圖書館</div><div>checked</div><div>subTab-content</div><div>41</div><div>Table41Height</div><div>Header41</div><div>Table41</div><div>List41</div><div>Filter41</div><div>tab-41sub01s</div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>其他書籍</div><div></div><div>subTab-content</div><div>42</div><div>Table42Height</div><div>Header42</div><div>Table42</div><div>List42</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>線索內容</div><div></div><div>subTab-content</div><div>43</div><div>Table43Height</div><div>Header43</div><div>Table43</div><div>List43</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>線索插圖</div><div></div><div>subTab-content2</div><div>44</div><div></div><div></div><div>Table44</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="A B C D"><div></div><div></div><div></div><div>05</div><div>酒館情報</div><div></div><div>subTab-content</div><div>45</div><div>Table45Height</div><div>Header45</div><div>Table45</div><div>List45</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>47</div><div>贊助</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>贊助人</div><div>checked</div><div>subTab-content</div><div>47</div><div>Table47Height</div><div>Header47</div><div>Table47</div><div>List47</div><div>Filter47</div><div>tab-47sub01s</div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0 T" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>51</div><div>百科</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>百科全書</div><div>checked</div><div>subTab-content</div><div>51</div><div>Table51Height</div><div>Header51</div><div>Table51</div><div>List51</div><div>tab-51sub01</div><div>tab-51sub01s</div><div></div><div></div><div>List51a, List51b, List51c</div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>贗品</div><div></div><div>subTab-content</div><div>52</div><div>Table52Height</div><div>Header52</div><div>Table52</div><div>List52</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>其他</div><div></div><div>subTab-content2</div><div>53</div><div></div><div>Header53</div><div>Table53</div><div>List53</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>素描插圖</div><div></div><div>subTab-content2</div><div>54</div><div></div><div></div><div>Table54</div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>發現動畫</div><div></div><div>subTab-content2</div><div>55</div><div></div><div></div><div>Table55</div><div>List55</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div>發現物年表</div><div></div><div>subTab-content</div><div>56</div><div>Table56Height</div><div>Header56</div><div>Table56</div><div>List56</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>58</div><div>發現介紹</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>01</div><div>地理</div><div></div><div>subTab-content2</div><div>58</div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>02</div><div>歷史</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>03</div><div>寶物</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>04</div><div>宗教</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>05</div><div>交易品</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>06</div><div>迷信</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>07</div><div>生物</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="B 1" lineFilter="A B C D"><div></div><div></div><div></div><div>08</div><div>民族</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table58</div><div>List58</div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>59</div><div>發現劇情</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>流程</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>svg</div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>02</div><div>宗教類</div><div></div><div>subTab-content2</div><div>59</div><div></div><div></div><div>Table59a</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>03</div><div>歐洲/近東</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59b</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>04</div><div>穆帝國</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59c</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>05</div><div>地理發現</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59d</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>06</div><div>非洲</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59e</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>07</div><div>中美/北美</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59f</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>08</div><div>南美</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59g</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>09</div><div>中東/南亞/東南亞</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59h</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B D"><div></div><div></div><div></div><div>10</div><div>東亞</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59i</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="A B C D"><div></div><div></div><div></div><div>11</div><div>太平洋</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div>Table59j</div><div>List59</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>61</div><div>事件</div><div>tab-content</div><div>01</div><div>哥白尼的望遠鏡</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>達文西的武器</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>美里達/哈瓦納</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -21382,7 +21445,7 @@
           <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>05a</div><div>劇情事件（葡萄牙籍）</div><div></div><div>subTab-content2</div><div>61</div><div></div><div>Header61</div><div>Table61</div><div>List61</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>05b</div><div>劇情事件（西班牙籍）</div><div></div><div>subTab-content2</div><div></div><div></div><div>Header61</div><div>Table61</div><div>List61</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>中國的海禁</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div>重要航海士</div><div></div><div>subTab-content2</div><div>62</div><div></div><div>Header62</div><div>Table62</div><div>List62</div><div></div><div></div><div></div><div></div><div>Table62h, List62h</div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>07</div><div>重要航海士</div><div></div><div>subTab-content2</div><div>62</div><div></div><div>Header62</div><div>Table62</div><div>List62</div><div></div><div></div><div></div><div>openDiv2</div><div>Table62h, List62h</div></div>
           <div class="List98" colorFilter="B 1" lineFilter="B D"><div></div><div></div><div></div><div>07a</div><div>重要航海士（葡）</div><div></div><div>subTab-content</div><div>63</div><div>Table63Height</div><div>Header63</div><div>Table63</div><div>List63</div><div></div><div></div><div></div><div></div><div>List63a</div></div>
           <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>07b</div><div>重要航海士（西）</div><div></div><div>subTab-content</div><div></div><div>Table63Height</div><div>Header63</div><div>Table63</div><div>List63</div><div></div><div></div><div></div><div></div><div>List63b, List63b2, List63b34</div></div>
           <div class="List98" colorFilter="B 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -21400,7 +21463,7 @@
           <div class="List98" colorFilter="B 0" lineFilter="B D"><div></div><div></div><div></div><div>03</div><div>畫滿航海地圖</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B D"><div></div><div></div><div></div><div>04</div><div>最快的好望角航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B D"><div></div><div></div><div></div><div>05</div><div>最快的環球航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div>航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div>航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
           <div class="List98" colorFilter="A 1" lineFilter="B C D"><div>67</div><div>戰鬥</div><div>tab-content</div><div>01</div><div>單挑</div><div>checked</div><div>subTab-content2</div><div>67</div><div></div><div></div><div>Table67</div><div>List67</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>陸戰</div><div></div><div>subTab-content2</div><div>68</div><div></div><div>Header68</div><div>Table68</div><div>List68</div><div></div><div></div><div></div><div></div><div>TableA, ListA3, ListA4</div></div>
           <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>陸戰兵種</div><div></div><div>subTab-content2</div><div>69</div><div></div><div>Header69</div><div>Table69</div><div>List69</div><div></div><div></div><div></div><div></div><div>List69a</div></div>
@@ -21418,7 +21481,7 @@
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>07b</div><div>對話2</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>07c</div><div>對話3</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div>產生船隻的bug</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>Table91, List91</div></div>
-          <div class="List98" colorFilter="B 2" lineFilter="A B C D"><div></div><div></div><div></div><div>09</div><div>船隻介紹</div><div></div><div>subTab-content</div><div>77</div><div></div><div></div><div>Table77</div><div>List77</div><div></div><div></div><div>YES</div><div></div><div>tab-71sub09t, img-r</div></div>
+          <div class="List98" colorFilter="B 2" lineFilter="A B C D"><div></div><div></div><div></div><div>09</div><div>船隻介紹</div><div></div><div>subTab-content</div><div>77</div><div></div><div></div><div>Table77</div><div>List77</div><div></div><div></div><div>tab-71sub09t</div><div></div><div>img-r</div></div>
           <div class="List98" colorFilter="A 1" lineFilter="B C D"><div>79</div><div>迷你遊戲</div><div>tab-content</div><div>01</div><div>聖杯之謎</div><div></div><div>subTab-content2</div><div>79</div><div></div><div>Header79</div><div>Table79</div><div>List79</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>獅身人面之謎</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>迷宮64之謎</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
@@ -21463,13 +21526,13 @@
           <div class="List98" colorFilter="B 2" lineFilter="B D"><div></div><div></div><div></div><div>07</div><div>酒館女郎</div><div></div><div>subTab-content2</div><div></div><div></div><div>Header90</div><div>Table90</div><div>List90</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 2" lineFilter="B C D"><div></div><div></div><div></div><div>08</div><div>贊助人</div><div></div><div>subTab-content2</div><div></div><div></div><div>Header90</div><div>Table90</div><div>List90</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 1" lineFilter="A B C D"><div></div><div></div><div></div><div>09</div><div>其他</div><div></div><div>subTab-content2</div><div>91</div><div></div><div></div><div>Table91</div><div>List91</div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>94</div><div>遊戲紀錄</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>區域探索</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 2" lineFilter="B"><div></div><div></div><div></div><div>02a</div><div>我的紀錄（01）</div><div></div><div>subTab-content2</div><div>94</div><div>Table94Height</div><div>Header94</div><div>Table94</div><div>List94</div><div></div><div></div><div></div><div>YES</div><div>List94a, List94b, List94c,</div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div>93</div><div>遊戲紀錄</div><div>tab-content</div><div>00</div><div>說明</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>01</div><div>區域探索</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
+          <div class="List98" colorFilter="A 2" lineFilter="B"><div></div><div></div><div></div><div>02a</div><div>我的紀錄（01）</div><div></div><div>subTab-content2</div><div>94</div><div>Table94Height</div><div>Header94</div><div>Table94</div><div>List94</div><div></div><div></div><div></div><div></div><div>List94a, List94b, List94c,</div></div>
           <div class="List98" colorFilter="A 2" lineFilter="B"><div></div><div></div><div></div><div>02b</div><div>我的紀錄（02）</div><div></div><div>subTab-content2</div><div>95</div><div></div><div></div><div>Table95</div><div>List95</div><div></div><div></div><div></div><div></div><div>List94hr, List94p0~p10</div></div>
           <div class="List98" colorFilter="A 2" lineFilter="A B C D"><div></div><div></div><div></div><div>02c</div><div>我的紀錄（03）</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div>97</div><div>關於</div><div>tab-content</div><div>01</div><div>關於</div><div>checked</div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>參考資料來源</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>參考資料來源</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>openDiv2</div><div></div></div>
           <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>內容更新紀錄</div><div></div><div>subTab-content</div><div>97</div><div>Table97Height</div><div></div><div>Table97</div><div>List97</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>待進行</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div>檔案</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableA, ListA3</div></div>
