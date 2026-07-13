@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/07/08"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/07/13"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -382,6 +382,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   width: 25px;
   height: 35px;
   line-height: 35px;
+  text-align: center;
 }
 .go-to-top:hover { background-color: #0056b3;}
 .go-to-top:after { content: "⬆";}
@@ -4261,7 +4262,27 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 
 
 /* ------------------------------ */
-/* 94 (tab-93sub02a, tab-93sub02b, tab-93sub02c). 遊戲紀錄 */
+/* 93 (tab-93sub00). 遊戲紀錄->說明 */
+.List93 {
+  display: grid;
+  grid-template-columns: 2em 13em 67em;
+  grid-column-gap: 0;
+  padding-left: 2px;
+  margin-left: 4em;
+  border: 1px solid #d6cdcd;
+  font-size: 10.5pt;
+  text-align: left;
+  line-height: 1.5em;
+  width: 82em;
+}
+.Table93{ margin-bottom: 0.5em; margin-top: 0.5em;}
+.Table93 > .List93:nth-child(n) { background-color: #ffffff;}
+.Table93 > .List93:nth-child(2n-1) { background-color: #eeeeee;}
+.Table93 > .List93 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
+.Table93 > .List93 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
+.Table93 > .List93 > div { padding-left: 5px;}
+
+/* 94 (tab-93sub02a, tab-93sub02b, tab-93sub02c). 遊戲紀錄->我的紀錄(01,02,03) */
 /* 95 (tab-93sub02a, tab-93sub02b, tab-93sub02c). 遊戲紀錄的表格內，用來顯示技能的表格 */
 .List94, .List94a, .List94b, .List94c {
   display: grid;
@@ -4271,21 +4292,21 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 }
 .List94, .List94a, .List94b { line-height: 1.5em;}
 .List94c { line-height: 45em;}
-.List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 57.8em 3.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 57.8em 3.6em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
 .List94a { grid-template-columns: 5.8em 5.4em 4.3em 83.7em;}
 
-.List94p0 { grid-template-columns: 5.8em 5.4em 4.3em 61.0em 0.4em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p1 { grid-template-columns: 5.8em 5.4em 4.3em 59.4em 2.0em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p3 { grid-template-columns: 5.8em 5.4em 4.3em 56.2em 5.2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p4 { grid-template-columns: 5.8em 5.4em 4.3em 54.6em 6.8em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p5 { grid-template-columns: 5.8em 5.4em 4.3em 53.0em 8.4em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p6 { grid-template-columns: 5.8em 5.4em 4.3em 51.4em 10.0em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p7 { grid-template-columns: 5.8em 5.4em 4.3em 49.8em 11.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p8 { grid-template-columns: 5.8em 5.4em 4.3em 48.2em 13.2em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p9 { grid-template-columns: 5.8em 5.4em 4.3em 46.6em 14.8em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p10{ grid-template-columns: 5.8em 5.4em 4.3em 45.0em 16.4em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p11{ grid-template-columns: 5.8em 5.4em 4.3em 43.4em 18.0em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
-.List94p12{ grid-template-columns: 5.8em 5.4em 4.3em 41.8em 19.6em 3.5em 4.5em 4em 3.8em 3.3em 3.2em;}
+.List94p0 { grid-template-columns: 5.8em 5.4em 4.3em 61.0em 0.4em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p1 { grid-template-columns: 5.8em 5.4em 4.3em 59.4em 2.0em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p3 { grid-template-columns: 5.8em 5.4em 4.3em 56.2em 5.2em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p4 { grid-template-columns: 5.8em 5.4em 4.3em 54.6em 6.8em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p5 { grid-template-columns: 5.8em 5.4em 4.3em 53.0em 8.4em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p6 { grid-template-columns: 5.8em 5.4em 4.3em 51.4em 10.0em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p7 { grid-template-columns: 5.8em 5.4em 4.3em 49.8em 11.6em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p8 { grid-template-columns: 5.8em 5.4em 4.3em 48.2em 13.2em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p9 { grid-template-columns: 5.8em 5.4em 4.3em 46.6em 14.8em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p10{ grid-template-columns: 5.8em 5.4em 4.3em 45.0em 16.4em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p11{ grid-template-columns: 5.8em 5.4em 4.3em 43.4em 18.0em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
+.List94p12{ grid-template-columns: 5.8em 5.4em 4.3em 41.8em 19.6em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
 
 .List94hr { grid-template-columns: 99.2em;}
 .List94hr > div { border-bottom: 1px solid #d6cdcd;}

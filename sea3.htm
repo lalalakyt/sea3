@@ -2654,6 +2654,7 @@
           </div>
           <div class="text2">西葡兩國在１４９４年１月簽訂特汝德夏斯條約後，互相鎖國，從此可以互相攻打對方的城市。</div>
           <div class="text2">可攻打的城市列表見：城市1、城市2、城市3。</div>
+          <div class="text2">若為西班牙國籍，將葡萄牙的特納提攻下後，會發現還是屬於葡萄牙王國，且出城再進城可以再打一次，<span>待確認為什麼</span>。</div>
         </div>
       </div>
       
@@ -17172,7 +17173,7 @@
   <label for="tab-67" data-filtertype="mainTab">戰鬥</label>
   <div class="tab-content">
     <div class="subTabs">
-      <input type="radio" name="tab-67sub" id="tab-67sub01" checked="checked"><!-- 67 -->
+      <input type="radio" name="tab-67sub" id="tab-67sub01"><!-- 67 -->
       <label for="tab-67sub01" data-filtertype="subTab">單挑</label>
       <div class="subTab-content2">
         <div class="desc">
@@ -17354,12 +17355,30 @@
           <div class="text2">只要擊倒敵方旗艦，就可以奪取敵方剩餘的船隻和物資。</div>
           <div class="text0">戰鬥勝利之後：</div>
           <div class="text2">將奪取來的交易品在交易所賣掉。</div>
+          <div class="text4">繳獲的交易品有時會有實際上無法買到的交易品，例如「巴黎產葡萄酒」（葡萄酒是法國的地域產品，非巴黎的特產品，且巴黎無港口）。</div>
           <div class="text2">將奪取來的船隻去造船廠將大砲拆下（改造→改變砲塔數，將砲塔數改為0），拆下不用花錢，老闆會用原價的三折收購拆下來的大砲，再把奪取來的船隻賣掉。</div>
           <div class="text2">如此，除了賣掉船隻的錢以外，還可以額外賺到拆下大砲賣出的錢。</div>
         </div>
       </div>
       
       <label data-filtertype="subTabDesc">　</label>
+
+      <input type="radio" name="tab-67sub" id="tab-67sub06" checked="checked">
+      <label for="tab-67sub06" data-filtertype="subTab">名聲</label>
+      <div class="subTab-content2">
+        <div class="desc">
+          <div class="title2"><span>海戰</span></div>
+          <div class="text2">擊敗海盜：名聲+300。</div>
+          <div class="text2">擊敗他國艦隊：名聲+220，惡名+180。</div>
+          <div class="text2">擊敗自國艦隊：名聲+120，惡名+280。</div>
+          <div class="title2"><span>陸戰</span></div>
+          <div class="text2">攻下城市：名聲+110~120之間的隨機亂數（待確認），惡名+200。</div>
+          <div class="text2">擊退陸上碰到的敵人：名聲+70~80之間的隨機亂數（待確認）。</div>
+          <div class="text2">發現物或行會任務中陸戰勝利：名聲+60~70之間的隨機亂數（待確認）。</div>
+          <div class="title2"><span>惡名過高</span></div>
+          <div class="text2">當惡名達到3000，進入母港時會觸發單挑劇情，戰勝後惡名+500。</div>
+        </div>
+      </div>
       
       <input type="radio" name="tab-67sub" id="tab-67sub07">
       <label for="tab-67sub07" data-filtertype="subTab">惡名過高</label>
@@ -17561,6 +17580,20 @@
               <div class="List73a"><div>必要乘員</div><div>40</div><div>41</div><div>42</div><div></div><div></div><div></div><div></div><div></div><div></div><div>43</div><div>44</div><div></div><div></div><div></div><div>45</div><div></div><div>46</div><div>47</div><div></div></div>
               <div class="List73a"><div>砲塔數</div><div>24</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
               <div class="List73a"><div>大砲</div><div>0</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>24</div></div>
+            </div>
+          </div>
+          <div class="text0">而冒險使用的好船：三桅方形帆船，可依照以下的改造步驟，變成推進力80，耐久度27，必要水手28人的船隻。</div>
+          <div class="text2">
+            <div class="Table73a">
+              <div class="List73a"><div></div><div>初始</div><div>增加</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <div class='List73a'><div></div><div></div><div>桅杆</div><div>帆</div><div>帆</div><div>浮力</div><div>固</div><div>固</div><div>固</div><div>浮力</div><div>帆</div><div>固</div><div>浮力</div><div>帆</div><div>容量</div><div>帆</div></div>
+              <div class='List73a'><div>耐久度</div><div>30</div><div></div><div>25</div><div>20</div><div>15</div><div>25</div><div>35</div><div>45</div><div>40</div><div>35</div><div>45</div><div>41</div><div>36</div><div>32</div><div>27</div></div>
+              <div class='List73a'><div>推進力</div><div>60</div><div></div><div>70</div><div>80</div><div>75</div><div>72</div><div>69</div><div>66</div><div>61</div><div>71</div><div>68</div><div>64</div><div>74</div><div>70</div><div>80</div></div>
+              <div class='List73a'><div>裝載容量</div><div>200</div><div>175</div><div></div><div></div><div>191</div><div></div><div></div><div></div><div>207</div><div></div><div></div><div>220</div><div></div><div>269</div><div></div></div>
+              <div class='List73a'><div>裝載重量</div><div>1750</div><div></div><div></div><div></div><div>2250</div><div>2084</div><div>1918</div><div>1752</div><div>2252</div><div></div><div>2086</div><div>2500</div><div></div><div>2500</div><div></div></div>
+              <div class='List73a'><div>必要乘員</div><div>20</div><div>22</div><div>23</div><div>24</div><div></div><div></div><div></div><div></div><div></div><div>25</div><div></div><div></div><div>26</div><div>27</div><div>28</div></div>
+              <div class='List73a'><div>砲塔數</div><div>6</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+              <div class='List73a'><div>大砲</div><div>0</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
           </div>
         </div>
@@ -20525,6 +20558,7 @@
               <div class="text4">(2024/03/31) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2024/03/31/%e9%99%b6%e7%be%85%e5%9c%8b%e7%8e%8b%e7%8f%ad%e7%a7%91%e8%8e%ab/">陶羅國王班科莫</a></div>
               <div class="text4">(2024/04/10) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2024/04/10/%e7%84%a1%e8%b2%ac%e4%bb%bb%e7%bf%bb%e8%ad%af%e5%a4%a7%e8%be%9b%e5%b7%b4%e5%a8%81%ef%bc%9a%e7%a5%9e%e7%a7%98%e7%9a%84%e9%9d%9e%e6%b4%b2%e6%96%87%e6%98%8e%e4%b8%ad%e5%bf%83/">[無責任翻譯]大辛巴威：神秘的非洲文明中心</a></div>
               <div class="text4">(2025/01/16) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2025/01/16/%e7%84%a1%e8%b2%ac%e4%bb%bb%e7%bf%bb%e8%ad%af%e3%80%8c%e9%80%99%e6%98%af%e4%b8%80%e4%bb%b6%e7%84%a1%e5%83%b9%e4%b9%8b%e5%af%b6%e3%80%8d%ef%bc%9a%e8%82%af%e4%ba%9e%e6%b5%b7%e5%b2%b8%e9%99%84%e8%bf%91/">[無責任翻譯]「這是一件無價之寶」：肯亞海岸附近的沉船可能來自瓦斯科‧達‧伽馬的最後一次航行</a></div>
+              <div class="text4">(2026/07/04) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2026/07/04/%e7%b6%ad%e5%be%b7%e8%a7%92%e7%be%a4%e5%b3%b6%e7%9a%84%e7%99%bc%e7%8f%be%e8%80%85%e2%94%80%e2%94%80%e5%ae%89%e6%9d%b1%e5%b0%bc%e5%a5%a7%e2%80%a7%e9%81%94%e2%80%a7%e8%ab%be%e5%88%a9/">維德角群島的發現者──安東尼奧‧達‧諾利</a></div>
               <div class="text2"></div>
               
               <div class="text4">(2006/12/08) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2006/12/08/%e9%a6%ac%e7%a9%86%e9%ad%af%e5%85%8b/">馬穆魯克</a></div>
@@ -20602,6 +20636,7 @@
               <div class="text4">(2026/02/25) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2026/02/25/%e7%a9%86%e4%bc%8a%e6%96%af%e5%8d%a1%e6%9c%80%e5%be%8c%e7%9a%84%e4%bc%8a%e6%8b%89%e5%8d%a1%e2%94%80%e2%94%80%e8%98%87%e5%8a%a0%e7%a9%86%e8%a5%bf/">穆伊斯卡最後的伊拉卡──蘇加穆西</a></div>
               <div class="text4">(2026/02/28) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2026/02/27/%e7%84%a1%e8%b2%ac%e8%aa%8d%e7%bf%bb%e8%ad%af%e8%80%83%e5%8f%a4%e5%ad%b8%e5%ae%b6%e7%99%bc%e7%8f%be%ef%bc%8c%e9%b3%a5%e7%b3%9e%e5%8d%94%e5%8a%a9%e6%ac%bd%e6%9f%a5%e7%8e%8b%e5%9c%8b%e5%b4%9b%e8%b5%b7/">[無責認翻譯]考古學家發現，鳥糞協助欽查王國崛起</a></div>
               <div class="text4">(2026/05/15) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2026/05/15/%e5%8d%97%e7%a9%86%e4%bc%8a%e6%96%af%e5%8d%a1%e8%81%af%e7%9b%9f%e8%a5%bf%e5%b8%95%e5%85%a7%e6%a2%85%e5%a5%8e%e5%85%a7/">南穆伊斯卡聯盟西帕內梅奎內</a></div>
+              <div class="text4">(2026/07/13) <a target="_blank" rel="noreferrer noopener" href="https://gmhjohnny.wordpress.com/2026/07/13/%e7%84%a1%e8%b2%ac%e4%bb%bb%e7%bf%bb%e8%ad%af%e6%88%90%e7%82%ba%e7%be%8e%e6%b4%b2%e7%ac%ac%e4%b8%80%e4%bd%8d%e9%9d%9e%e8%a3%94%e6%8e%a2%e9%9a%aa%e5%ae%b6%e7%9a%84%e9%bb%91%e4%ba%ba%e5%be%81%e6%9c%8d/">[無責任翻譯]成為美洲第一位非裔探險家的黑人征服者</a></div>
               <div class="text2"></div>
             </div>
             
@@ -21229,6 +21264,11 @@
           <div class="List97"><div></div><div>修改</div><div>「交易」→「城市交易品列表」</div><div>修正錯別字：烟草->煙草</div></div>
           <div class="List97"><div></div><div>修改</div><div>「遊戲進行」→「探險須知」</div><div>增加說明內容</div></div>
           <div class="List97"><div></div><div>修改</div><div>「其他」→「bug」</div><div>增加環球航線的說明</div></div>
+          <div class="List97"><div>2026/07/13</div><div>修改</div><div>「船艦」→「船艦改造」</div><div>增加三桅方形帆船的改造範例</div></div>
+          <div class="List97"><div></div><div>新增</div><div>「戰鬥」→「名聲」</div><div></div></div>
+          <div class="List97"><div></div><div>修改</div><div>「戰鬥」→「海戰」</div><div>增加戰鬥勝利之後的說明</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「城市」→「攻打國家」</div><div>增加特納提的說明</div></div>
+          <div class="List97"><div></div><div>修改</div><div>「關於」→「參考資料來源」</div><div>新增歷史和地理的參考資料</div></div>
         </div>
       </div>
       
@@ -21464,12 +21504,12 @@
           <div class="List98" colorFilter="B 0" lineFilter="B D"><div></div><div></div><div></div><div>04</div><div>最快的好望角航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="B D"><div></div><div></div><div></div><div>05</div><div>最快的環球航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 0" lineFilter="A B C D"><div></div><div></div><div></div><div>06</div><div>航線</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>GoToTop</div><div></div></div>
-          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div>67</div><div>戰鬥</div><div>tab-content</div><div>01</div><div>單挑</div><div>checked</div><div>subTab-content2</div><div>67</div><div></div><div></div><div>Table67</div><div>List67</div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 1" lineFilter="B C D"><div>67</div><div>戰鬥</div><div>tab-content</div><div>01</div><div>單挑</div><div></div><div>subTab-content2</div><div>67</div><div></div><div></div><div>Table67</div><div>List67</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 2" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>陸戰</div><div></div><div>subTab-content2</div><div>68</div><div></div><div>Header68</div><div>Table68</div><div>List68</div><div></div><div></div><div></div><div></div><div>TableA, ListA3, ListA4</div></div>
           <div class="List98" colorFilter="A 1" lineFilter="B C D"><div></div><div></div><div></div><div>03</div><div>陸戰兵種</div><div></div><div>subTab-content2</div><div>69</div><div></div><div>Header69</div><div>Table69</div><div>List69</div><div></div><div></div><div></div><div></div><div>List69a</div></div>
           <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>04</div><div>海戰</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>05</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          <div class="List98" colorFilter="A 0 T" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          <div class="List98" colorFilter="A 0" lineFilter="B C D"><div></div><div></div><div></div><div>06</div><div>名聲</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="A 0" lineFilter="A B C D"><div></div><div></div><div></div><div>07</div><div>惡名過高</div><div></div><div>subTab-content2</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>TableB, ListB</div></div>
           <div class="List98" colorFilter="B 2" lineFilter="B C D"><div>71</div><div>船艦</div><div>tab-content</div><div>01</div><div>船艦種類</div><div>checked</div><div>subTab-content2</div><div>71</div><div></div><div>Header71</div><div>Table71</div><div>List71</div><div></div><div></div><div></div><div></div><div></div></div>
           <div class="List98" colorFilter="B 1" lineFilter="B C D"><div></div><div></div><div></div><div>02</div><div>出場年代</div><div></div><div>subTab-content</div><div>72</div><div>Table72Height</div><div>Header72</div><div>Table72</div><div>List72</div><div></div><div></div><div></div><div></div><div></div></div>
