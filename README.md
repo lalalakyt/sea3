@@ -18,8 +18,13 @@
 <div>且設定資料都用表格方式呈現，還有篩選功能，方便好查。</div><br/>
 <div>網頁內容由 HTML + Pure CSS 所構成。包含以下檔案：</div><br/>
 <table>
-  <tr><td>sea3.htm</td><td>資料內容</td></tr>
-  <tr><td>sea3record1.htm</td><td>遊戲紀錄01</td></tr>
+  <tr><td>sea3.htm</td><td>主資料內容</td></tr>
+  <tr><td>sea3tab58.htm</td><td>　發現物介紹的資料內容</td></tr>
+  <tr><td>sea3tab59.htm</td><td>　發現物劇情的資料內容</td></tr>
+  <tr><td>sea3tab97sub02.htm</td><td>　參考資料來源的內容</td></tr>
+  <tr><td>sea3record1.htm</td><td>　遊戲紀錄01</td></tr>
+  <tr><td>sea3record2.htm</td><td>　遊戲紀錄02</td></tr>
+  <tr><td>sea3record2a.htm</td><td>　遊戲紀錄02的思路說明</td></tr>
   <tr><td>style.css</td><td>網頁排版用的樣式表</td></tr>
   <tr><td>svg.css</td><td>向量圖使用的樣式表</td></tr>
   <tr><td>pic/</td><td>所有的圖檔</td></tr>
@@ -32,10 +37,14 @@
   <tr><td>pic/g/</td><td>　交易品圖片</td></tr>
   <tr><td>pic/h/</td><td>　線索書籍的插圖</td></tr>
   <tr><td>pic/i/</td><td>　發現物介紹的圖片</td></tr>
+  <tr><td>pic/j/</td><td>　嗜好品的價格變化</td></tr>
   <tr><td>pic/m/</td><td>　人物頭像</td></tr>
   <tr><td>pic/o/</td><td>　其他圖片</td></tr>
   <tr><td>pic/p/</td><td>　贊助人頭像</td></tr>
   <tr><td>pic/r1/</td><td>　遊戲紀錄截圖（01）</td></tr>
+  <tr><td>pic/r2-1/</td><td>　遊戲紀錄截圖（02）part 1</td></tr>
+  <tr><td>pic/r2-2/</td><td>　遊戲紀錄截圖（02）part 2</td></tr>
+  <tr><td>pic/r2-3/</td><td>　遊戲紀錄截圖（02）part 3</td></tr>
   <tr><td>pic/s/</td><td>　船隻介紹的附圖</td></tr>
   <tr><td>pic/sea2/</td><td>　大航海時代二相關角色頭像</td></tr>
   <tr><td>pic/t/</td><td>　物品圖片</td></tr>
