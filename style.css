@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/07/13"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/08/09"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -39,9 +39,10 @@
   --Table72Height: 598.5px; /* 船艦->出場年代 */
   --Table86Height: 626px;   /* 其他->孩子的能力值 & 玩家的能力值 */
   
-  --Table94Height: 631px;   /* 遊戲紀錄 */
+  --Table93Height: 631px;   /* 遊戲紀錄(說明) */
+  --Table94Height: 632px;   /* 遊戲紀錄(01、02) */
   --Table97Height: 651px;   /* 關於->更新紀錄 */
-  --Table98Height: 601px;   /* 關於->內容架構 */
+  --Table98Height: 602px;   /* 關於->內容架構 */
 }
 
 
@@ -185,7 +186,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   -moz-column-gap: 1px;
        column-gap: 1px;
   margin: 0em auto;
-  max-width: 99.8%;
+  max-width: 100%;
   width: 100%;
 }
 .tabs > input[type=radio] { display: none;}
@@ -346,7 +347,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 }
 .ListA1 { grid-template-columns: 8em 52em; width: 60em;}
 .ListA2 { grid-template-columns: 2em 9em; width: 11em;}
-.ListA3 { grid-template-columns: 10em 14em; width: 24em;}
+.ListA3 { grid-template-columns: 12em 14em; width: 26em;}
 .ListA4 { grid-template-columns: 6em 44em; width: 50em;}
 .ListA5 { grid-template-columns: 3em 8em 8em; width: 19em;}
 .ListA1 > div, .ListA2 > div, .ListA3 > div, .ListA4 > div, .ListA5 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
@@ -366,10 +367,10 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* ------------------------------ */
 /* H. Go to Top */
-.go-to-top {
+.go-to-top  {bottom: 23px; right: 35px;}
+.go-to-top2 {bottom: 1.5px; right: 14px;}
+.go-to-top, .go-to-top2 {
   position: fixed;
-  bottom: 20px;
-  right: 35px;
   z-index: 9999;
   font-size: 18pt;
   background-color: #007bff;
@@ -384,8 +385,8 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   line-height: 35px;
   text-align: center;
 }
-.go-to-top:hover { background-color: #0056b3;}
-.go-to-top:after { content: "⬆";}
+.go-to-top:hover, .go-to-top2:hover { background-color: #0056b3;}
+.go-to-top:after, .go-to-top2:after { content: "⬆";}
 
 
 /* ------------------------------ */
@@ -1771,6 +1772,39 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
 #tab-25sub04i:checked ~ label[for="tab-25sub04"] + .subTab-content > .Table27 > .List27 > div:nth-child(n+229):nth-child(-n+256) { display: block;}
 #tab-25sub04j:checked ~ label[for="tab-25sub04"] + .subTab-content > .Table27 > .List27 > div:nth-child(n+257):nth-child(-n+284) { display: block;}
 
+
+/* 28 (tab-25sub06). 交易->嗜好品價格 */
+.List28 {
+  display: grid;
+  grid-template-columns: 8em 4em 4em 4em 4em 5em 4em 4em 4em 4em 4em 4em 4em 5em 4em 4em 4em;
+  grid-column-gap: 0;
+  padding-left: 3px;
+  font-size: 12pt;
+  text-align: right;
+  line-height: 1.5em;
+  height: 1.5em;
+  border-bottom: 1px solid #d6cdcd;
+  width: 74em;
+}
+.List28 > div { border-right: 1px solid #d6cdcd; padding-right: 5px;}
+.Table28 { border-left: 1px solid #d6cdcd;}
+.Table28 > .List28:nth-child(1) > div:nth-child(1) { border-top: 1px solid #d6cdcd;}
+.Table28 > .List28:nth-child(1) > div:nth-child(2) { border-top: 1px solid #d6cdcd; text-align: center; grid-column: 2 / span 8;}
+.Table28 > .List28:nth-child(1) > div:nth-child(3) { border-top: 1px solid #d6cdcd; text-align: center; grid-column: 10 / span 8;}
+.Table28 > .List28:nth-child(2) { border-bottom: 0; }
+
+.List28a {
+  display: grid;
+  grid-template-columns: 8em 33em 33em;
+  grid-column-gap: 0;
+  padding-left: 3px;
+  font-size: 12pt;
+}
+.List28a > div { padding: 5px; border-right: 1px solid #d6cdcd;}
+.List28a > div:nth-child(2) { text-align: center;}
+.List28a > div:nth-child(3) { text-align: center;}
+.List28a img { width: 490px;}
+.List28b > div { border-bottom: 1px solid #d6cdcd;}
 
 /* ------------------------------ */
 /* 31 (tab-31sub01). 人物->人物列表 */
@@ -4262,28 +4296,36 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 
 
 /* ------------------------------ */
-/* 93 (tab-93sub00). 遊戲紀錄->說明 */
+/* 93 (tab-93sub02a). 遊戲紀錄->我的紀錄(說明) */
+/* 93 (tab-93sub02d). 遊戲紀錄->我的紀錄(流程) */
+#tab-93sub02a-iframe { overflow-y: scroll; height: var(--Table93Height);}
+#tab-93sub02d-iframe { overflow-y: scroll; height: var(--Table93Height);}
+
 .List93 {
   display: grid;
-  grid-template-columns: 2em 13em 67em;
+  grid-template-columns: 1fr;
   grid-column-gap: 0;
-  padding-left: 2px;
-  margin-left: 4em;
-  border: 1px solid #d6cdcd;
-  font-size: 10.5pt;
+  font-size: 9pt;
   text-align: left;
   line-height: 1.5em;
-  width: 82em;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
 }
-.Table93{ margin-bottom: 0.5em; margin-top: 0.5em;}
-.Table93 > .List93:nth-child(n) { background-color: #ffffff;}
-.Table93 > .List93:nth-child(2n-1) { background-color: #eeeeee;}
-.Table93 > .List93 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
-.Table93 > .List93 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
-.Table93 > .List93 > div { padding-left: 5px;}
+.List93 > div { border-top: 1px solid #d6cdcd; padding: 3px; height: 1.5em; line-height: 1.5em;}
+.List93 .c0 { background-color: #aaaaaa; font-weight: bold; border-top: 1px solid #000000;}
+.List93 .c1 { background-color: #ffcc80;}
+.List93 .c2 { background-color: #c5e1a5;}
 
-/* 94 (tab-93sub02a, tab-93sub02b, tab-93sub02c). 遊戲紀錄->我的紀錄(01,02,03) */
-/* 95 (tab-93sub02a, tab-93sub02b, tab-93sub02c). 遊戲紀錄的表格內，用來顯示技能的表格 */
+.Table93 {
+  display: grid;
+  grid-template-columns: 14em 8.5em 19.5em 10em 11em 8.5em;
+  padding: 0 0 0.5em 3em; /*t/r/b/l*/
+}
+.Table93 > div:nth-child(1) { border-left: 1px solid #000000;}
+
+
+/* 94 (tab-93sub02b, tab-93sub02c). 遊戲紀錄->我的紀錄(01,02) */
+/* 95 (tab-93sub02b, tab-93sub02c). 遊戲紀錄的表格內，用來顯示技能的表格 */
 .List94, .List94a, .List94b, .List94c {
   display: grid;
   grid-column-gap: 0;
@@ -4291,7 +4333,7 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   text-align: left;
 }
 .List94, .List94a, .List94b { line-height: 1.5em;}
-.List94c { line-height: 45em;}
+.List94c { height: 45em;}
 .List94, .List94b, .List94c { grid-template-columns: 5.8em 5.4em 4.3em 57.8em 3.6em 3.5em 4.5em 4em 4em 3.5em 2.8em;}
 .List94a { grid-template-columns: 5.8em 5.4em 4.3em 83.7em;}
 
@@ -4394,8 +4436,10 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 .Table95 > .List95 > div { border-right: 1px solid #d6cdcd; border-bottom: 1px solid #d6cdcd;}
 .Table95 > .List95 > div:nth-child(1) { text-align: left; padding-left: 2px;}
 
-.List95 > .b1 { background-color: #c5e1a5;}
-.List95 > .b2 { background-color: #ffcc80;}
+.Table95a { border-left: 1px solid #d6cdcd; border-top: 1px solid #d6cdcd; font-size: 9pt; width: 60em;}
+
+.Table95 .b1 { background-color: #c5e1a5;}
+.Table95 .b2 { background-color: #ffcc80;}
 
 
 /* ------------------------------ */
@@ -4421,7 +4465,7 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 /* 98 (tab-97sub06). 關於->內容架構 */
 .List98 {
   display: grid;
-  grid-template-columns: 2em 4.5em 7em 2.5em 11.5em 5em 8.75em 1.8em 7.5em 5.5em 5em 4em 6.5em 7em 7em 5em 1fr;
+  grid-template-columns: 2em 4.5em 7em 2.5em 11.5em 5em 8.75em 1.8em 7.5em 5.5em 5em 4em 6.5em 7em 7em 5.5em 1fr;
   grid-column-gap: 0;
   padding-left: 2px;
   font-size: 9pt;
