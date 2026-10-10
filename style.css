@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/08/09"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/10/10"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -14,9 +14,9 @@
   --Table16Height: 500px;   /* 市集->市集 */
   --Table18Height: 480px;   /* 技能->列表 */
   
-  --Table20Height: 633px;   /* 物品->物品列表 */
-  --Table21Height: 620px;   /* 物品->圖片 */
-  --Table22Height: 618px;   /* 物品->圖片2 */
+  --Table21Height: 633px;   /* 物品->物品列表 */
+  --Table22Height: 620px;   /* 物品->圖片 */
+  --Table23Height: 618px;   /* 物品->圖片2 */
   --Table25Height: 620px;   /* 交易->交易品圖片 */
   --Table26Height: 520px;   /* 交易->交易品價格 & 地域交易品 */
   --Table27Height: 615px;   /* 交易->城市交易品列表(1~10) */
@@ -36,7 +36,7 @@
   --Table56Height: 626px;   /* 百科->發現物年表 */
   
   --Table63Height: 598px;   /* 事件->重要航海士(葡) & 重要航海士(西) */
-  --Table72Height: 598.5px; /* 船艦->出場年代 */
+  --Table74Height: 598.5px; /* 船艦->出場年代 */
   --Table86Height: 626px;   /* 其他->孩子的能力值 & 玩家的能力值 */
   
   --Table93Height: 631px;   /* 遊戲紀錄(說明) */
@@ -194,7 +194,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .tabs > input[type=radio]:checked + label + .tab-content  { display: block;}
 .tabs > input[type=radio]:checked + label + .tab-content2 { display: block;}
 .tabs > label[data-filtertype="mainTab"] {
-  padding: 0.3em 0.3em;
+  padding: 0.25em 0.25em;
   color: #ccc;
   border: 1px solid #ccc;
   border-bottom: unset;
@@ -276,7 +276,6 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 .tab-split input[type="radio"], .subTab-split input[type="radio"]  { display: none;}
 
 .split-menu > label {
-  padding: 12px 10px;
   cursor: pointer;
   transition: 0.3s;
   text-align: left;
@@ -284,6 +283,8 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   font-weight: bold;
 }
 .split-menu label:hover { background-color: #ddd;}
+.split-menu1 > label {padding: 12px 10px;}
+.split-menu2 > label {padding: 8px 4px;}
 
 .split-menu {
   display: flex;
@@ -335,7 +336,7 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* ------------------------------ */
 /* G. 通用的List */
-.ListA1, .ListA2, .ListA3, .ListA4, .ListA5 {
+.ListA1, .ListA2, .ListA3, .ListA4, .ListA5, .ListA6 {
   display: grid;
   grid-column-gap: 0;
   padding-left: 0;
@@ -346,12 +347,13 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
   line-height: 1.5em;
 }
 .ListA1 { grid-template-columns: 8em 52em; width: 60em;}
-.ListA2 { grid-template-columns: 2em 9em; width: 11em;}
-.ListA3 { grid-template-columns: 12em 14em; width: 26em;}
+.ListA2 { grid-template-columns: 3em 9em; width: 12em;}
+.ListA3 { grid-template-columns: 12em 16em; width: 28em;}
 .ListA4 { grid-template-columns: 6em 44em; width: 50em;}
 .ListA5 { grid-template-columns: 3em 8em 8em; width: 19em;}
-.ListA1 > div, .ListA2 > div, .ListA3 > div, .ListA4 > div, .ListA5 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
-.ListA5 > div { text-align: center;}
+.ListA6 { grid-template-columns: 10em 8em 8em; width: 26em;}
+.ListA1 > div, .ListA2 > div, .ListA3 > div, .ListA4 > div, .ListA5 > div, .ListA6 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
+.ListA5 > div, .ListA6 > div { text-align: center;}
 
 .TableA { margin-bottom: 1em;}
 .TableA > div:nth-child(n) { background-color: #dddddd;}
@@ -1079,10 +1081,9 @@ input[name="Filter08"]:checked ~ .Table08 > div { display: none;}
 .Table13 > .List13c:nth-child(47) > div:nth-child(4) { grid-column: 15 / span 6;}
 
 
-/* ------------------------------ */
-/* 14 (tab-06sub10). 城市->城市場景 */
-#tab-06sub10 + label + .subTab-content > .subTab-split > .split-menu { width: 4.5em;}
-#tab-06sub10 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 4.5em;}
+/* 14 (tab-06sub09). 城市->城市場景 */
+#tab-06sub09 + label + .subTab-content > .subTab-split > .split-menu { width: 4.5em;}
+#tab-06sub09 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 4.5em;}
 
 .Table14 {
   display: grid;
@@ -1245,6 +1246,11 @@ input[name="Filter16"]:checked ~ .Table16 > div { display: none;}
 #Filter16-v40:checked ~ .Header16 label[for="Filter16-v40"] { background-color: #2ba6cb; color: black;}
 
 
+/* (tab-16sub02). 市集->對話 */
+#tab-16sub02 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-16sub02 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+
+
 /* ------------------------------ */
 /* 18 (tab-18sub01). 技能->列表 */
 .List18 {
@@ -1375,9 +1381,14 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
 .Table19 > div:nth-child(1) > div { text-align: center;}
 
 
+/* 20 (tab-18sub03). 技能->對話 */
+#tab-18sub03 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-18sub03 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+
+
 /* ------------------------------ */
-/* 20 (tab-20sub01). 物品->物品列表 */
-.List20 {
+/* 21 (tab-21sub01). 物品->物品列表 */
+.List21 {
   display: grid;
   grid-template-columns: 1.75em 1.8em 12.75em 4em 4.25em 4.25em 6.5em 13em 56em;
   grid-column-gap: 0;
@@ -1386,105 +1397,105 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
   text-align: left;
   line-height: 1.5em;
 }
-.Header20 > .List20 { height: 1.5em; background-color: #aaaaaa;}
-.Header20 > .List20 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
-.Header20 > .List20 > div:nth-child(1) { grid-column: 1 / span 2;}
-.Header20 > .List20 > div:nth-child(2) { text-align: left;}
-.Header20 > .List20 > div:nth-child(4) { text-align: center;}
-.Header20 > .List20 > div:nth-child(5) { text-align: center;}
-.Header20 > .List20 > div:nth-child(8) { border-right: 0;}
+.Header21 > .List21 { height: 1.5em; background-color: #aaaaaa;}
+.Header21 > .List21 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
+.Header21 > .List21 > div:nth-child(1) { grid-column: 1 / span 2;}
+.Header21 > .List21 > div:nth-child(2) { text-align: left;}
+.Header21 > .List21 > div:nth-child(4) { text-align: center;}
+.Header21 > .List21 > div:nth-child(5) { text-align: center;}
+.Header21 > .List21 > div:nth-child(8) { border-right: 0;}
 
-.Table20 { font-size: 12pt; overflow-y: scroll; height: var(--Table20Height);}
-.Table20 > .List20:nth-child(n) { background-color: #eeeeee;}
-.Table20 > .List20:nth-child(2n-1) { background-color: #ffffff;}
-.Table20 > .List20 { border-bottom: 1px solid #d6cdcd;}
-.Table20 > .List20 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
-.Table20 > .List20 > div:nth-child(1) { border-right: 0;}
-.Table20 > .List20 > div:nth-child(5) { text-align: right; padding-right: 3px;}
-.Table20 > .List20 > div:nth-child(6) { text-align: right; padding-right: 3px;}
-.Table20 > .List20 > div:nth-child(9) { border-right: 0;}
-.Table20 > .List20[data-filter="v2"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
-.Table20 > .List20[data-filter="v3"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
-.Table20 > .List20[data-filter="v4"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
-.Table20 > .List20[data-filter="v5"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
-.Table20 > .List20[data-filter="v6"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
-.Table20 > .List20[data-filter="v7"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 { font-size: 12pt; overflow-y: scroll; height: var(--Table21Height);}
+.Table21 > .List21:nth-child(n) { background-color: #eeeeee;}
+.Table21 > .List21:nth-child(2n-1) { background-color: #ffffff;}
+.Table21 > .List21 { border-bottom: 1px solid #d6cdcd;}
+.Table21 > .List21 > div { border-right: 1px solid #d6cdcd; padding-left: 3px;}
+.Table21 > .List21 > div:nth-child(1) { border-right: 0;}
+.Table21 > .List21 > div:nth-child(5) { text-align: right; padding-right: 3px;}
+.Table21 > .List21 > div:nth-child(6) { text-align: right; padding-right: 3px;}
+.Table21 > .List21 > div:nth-child(9) { border-right: 0;}
+.Table21 > .List21[data-filter="v2"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 > .List21[data-filter="v3"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 > .List21[data-filter="v4"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 > .List21[data-filter="v5"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 > .List21[data-filter="v6"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
+.Table21 > .List21[data-filter="v7"] > div:nth-child(8) { text-align: right; padding-right: 8px;}
 
-.List20 span { color: #4169E1; font-size: 9pt;}
+.List21 span { color: #4169E1; font-size: 9pt;}
 
-#tab-20sub01a:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01a:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01a:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v1"] { display: grid;}
-#tab-20sub01a:checked ~ label[for="tab-20sub01a"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01b:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01b:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01b:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v2"] { display: grid;}
-#tab-20sub01b:checked ~ label[for="tab-20sub01b"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01c:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01c:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01c:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v3"] { display: grid;}
-#tab-20sub01c:checked ~ label[for="tab-20sub01c"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01d:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01d:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01d:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v4"] { display: grid;}
-#tab-20sub01d:checked ~ label[for="tab-20sub01d"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01e:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01e:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01e:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v5"] { display: grid;}
-#tab-20sub01e:checked ~ label[for="tab-20sub01e"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01f:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01f:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01f:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v6"] { display: grid;}
-#tab-20sub01f:checked ~ label[for="tab-20sub01f"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01g:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01g:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01g:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v7"] { display: grid;}
-#tab-20sub01g:checked ~ label[for="tab-20sub01g"] { background-color: #2ba6cb; color: black;}
-#tab-20sub01h:checked ~ label[for="tab-20sub01"] + .subTab-content { display: grid;}
-#tab-20sub01h:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div { display: none;}
-#tab-20sub01h:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > div[data-filter="v8"] { display: grid;}
-#tab-20sub01h:checked ~ label[for="tab-20sub01h"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01a:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01a:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01a:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v1"] { display: grid;}
+#tab-21sub01a:checked ~ label[for="tab-21sub01a"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01b:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01b:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01b:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v2"] { display: grid;}
+#tab-21sub01b:checked ~ label[for="tab-21sub01b"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01c:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01c:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01c:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v3"] { display: grid;}
+#tab-21sub01c:checked ~ label[for="tab-21sub01c"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01d:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01d:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01d:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v4"] { display: grid;}
+#tab-21sub01d:checked ~ label[for="tab-21sub01d"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01e:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01e:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01e:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v5"] { display: grid;}
+#tab-21sub01e:checked ~ label[for="tab-21sub01e"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01f:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01f:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01f:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v6"] { display: grid;}
+#tab-21sub01f:checked ~ label[for="tab-21sub01f"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01g:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01g:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01g:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v7"] { display: grid;}
+#tab-21sub01g:checked ~ label[for="tab-21sub01g"] { background-color: #2ba6cb; color: black;}
+#tab-21sub01h:checked ~ label[for="tab-21sub01"] + .subTab-content { display: grid;}
+#tab-21sub01h:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div { display: none;}
+#tab-21sub01h:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > div[data-filter="v8"] { display: grid;}
+#tab-21sub01h:checked ~ label[for="tab-21sub01h"] { background-color: #2ba6cb; color: black;}
 
-#tab-20sub01c:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01d:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01c:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20,
-#tab-20sub01d:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20 {
+#tab-21sub01c:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01d:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01c:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21,
+#tab-21sub01d:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21 {
   grid-template-columns: 1.75em 1.8em 8.75em 3em 4.25em 4.25em 5.5em 3em 72em;
 }
-#tab-20sub01b:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01f:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01g:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01b:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20,
-#tab-20sub01f:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20,
-#tab-20sub01g:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20 {
+#tab-21sub01b:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01f:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01g:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01b:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21,
+#tab-21sub01f:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21,
+#tab-21sub01g:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21 {
   grid-template-columns: 1.75em 1.8em 10.75em 4em 4.25em 4.25em 6.5em 3em 68em;
 }
-#tab-20sub01a:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01h:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01a:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20, 
-#tab-20sub01h:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20 {
+#tab-21sub01a:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01h:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01a:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21, 
+#tab-21sub01h:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21 {
   grid-template-columns: 1.75em 1.8em 5.75em 4em 4.25em 4.25em 6.5em 36em 40em;
 }
-#tab-20sub01e:checked ~ label[for="tab-20sub01"] + .subTab-content > .Header20 > .List20,
-#tab-20sub01e:checked ~ label[for="tab-20sub01"] + .subTab-content > .Table20 > .List20 {
+#tab-21sub01e:checked ~ label[for="tab-21sub01"] + .subTab-content > .Header21 > .List21,
+#tab-21sub01e:checked ~ label[for="tab-21sub01"] + .subTab-content > .Table21 > .List21 {
   grid-template-columns: 1.75em 1.8em 12.75em 4em 4.25em 4.25em 6.5em 3em 66em;
 }
 
 
-/* 21 (tab-20sub02). 物品->圖片 */
-.Table21 {
+/* 22 (tab-21sub02). 物品->圖片 */
+.Table22 {
   display: grid;
   grid-template-columns: 306px 306px 306px 306px;
   grid-auto-rows: 153px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   overflow-y: scroll;
-  height: var(--Table21Height);
+  height: var(--Table22Height);
   font-size: 12pt;
 }
-.Table21 > div { padding: 2px 0 0 3px;}
-.Table21 img { width: 300px;}
-.Table21 .List21c { 
+.Table22 > div { padding: 2px 0 0 3px;}
+.Table22 img { width: 300px;}
+.Table22 .List22c { 
   background-color: black;
   color: white;
   margin: 0 3px 0 0; /*t/r/b/l*/
@@ -1494,10 +1505,10 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
   font-size: 40pt;
   text-align: center;
 }
-.Table21 > div {
+.Table22 > div {
   position: relative;
 }
-.List21d {
+.List22d {
   background-color: #483D8B;
   color: white;
   margin: 0 3px 0 0; /*t/r/b/l*/
@@ -1511,7 +1522,7 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
   top: 28px;
   left: 0px;
 }
-.List21f {
+.List22f {
   background-color: #483D8B;
   color: white;
   margin: 0 3px 0 0; /*t/r/b/l*/
@@ -1527,29 +1538,29 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
   top: 123px;
   left: 0px;
 }
-.List21d p {text-indent: -5em; margin-left: 5em; font-size: 10pt;}
-.List21 > div > input { display: none;}
-.List21 > div > input:not(checked) ~ .List21d { display: none;}
-.List21 > div > input:not(checked) ~ .List21f { display: none;}
-.List21 > div > input:checked ~ .List21d { display: block;}
-.List21 > div > input:checked ~ .List21f { display: block;}
+.List22d p {text-indent: -5em; margin-left: 5em; font-size: 10pt;}
+.List22 > div > input { display: none;}
+.List22 > div > input:not(checked) ~ .List22d { display: none;}
+.List22 > div > input:not(checked) ~ .List22f { display: none;}
+.List22 > div > input:checked ~ .List22d { display: block;}
+.List22 > div > input:checked ~ .List22f { display: block;}
 
 
-/* 22 (tab-20sub03). 物品->圖片2 */
-.Table22 {
+/* 23 (tab-21sub03). 物品->圖片2 */
+.Table23 {
   display: grid;
   grid-template-columns: 248px 248px 248px 248px 248px;
   grid-auto-rows: 160px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   overflow-y: scroll;
-  height: var(--Table22Height);
+  height: var(--Table23Height);
   padding: 2px 0 0 3px;
   font-size: 12pt;
 }
-.Table22 > div { padding: 2px 0 0 3px;}
-.List22 { position: relative; font-size: 10pt;}
-.List22 > div:nth-child(1) {
+.Table23 > div { padding: 2px 0 0 3px;}
+.List23 { position: relative; font-size: 10pt;}
+.List23 > div:nth-child(1) {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1558,10 +1569,10 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
   width: 240px;
   padding: 3px 1px 2px 3px;
 }
-.List22 > div:nth-child(2) { position: absolute; top: 105px; left: 0px; padding-left: 3px;}
-.List22 > div:nth-child(3) { position: absolute; top: 130px; left: 0px; padding-left: 3px;}
-.List22 > div:nth-child(4) { position: absolute; top: 24px; left: 64px;}
-.List22 img { width: 180px; height: 132px;}
+.List23 > div:nth-child(2) { position: absolute; top: 105px; left: 0px; padding-left: 3px;}
+.List23 > div:nth-child(3) { position: absolute; top: 130px; left: 0px; padding-left: 3px;}
+.List23 > div:nth-child(4) { position: absolute; top: 24px; left: 64px;}
+.List23 img { width: 180px; height: 132px;}
 
 
 /* ------------------------------ */
@@ -1805,6 +1816,12 @@ input[name="Filter18"]:checked ~ .Table18 > div { display: none;}
 .List28a > div:nth-child(3) { text-align: center;}
 .List28a img { width: 490px;}
 .List28b > div { border-bottom: 1px solid #d6cdcd;}
+
+
+/* 29 (tab-25sub07). 技能->對話 */
+#tab-25sub07 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-25sub07 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+
 
 /* ------------------------------ */
 /* 31 (tab-31sub01). 人物->人物列表 */
@@ -3865,8 +3882,20 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 
 
 /* ------------------------------ */
-/* 71 (tab-71sub01). 船艦->船艦種類 */
-.List71 {
+/* 71 (tab-71sub01). 探險->出港/出城 */
+/* 71 (tab-71sub02). 探險->進港/進城 */
+/* 71 (tab-71sub03). 探險->登陸 */
+#tab-71sub01 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
+#tab-71sub01 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
+#tab-71sub02 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
+#tab-71sub02 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
+#tab-71sub03 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
+#tab-71sub03 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
+
+
+/* ------------------------------ */
+/* 73 (tab-73sub01). 船艦->船艦種類 */
+.List73 {
   display: grid;
   grid-template-columns: 8em 10em 2.25em 1em 2.25em 2.25em 1em 2.25em 2.5em 1em 2.5em 3em 1em 3em 3em 5.5em 2em 1em 2em 2em 1em 2.25em 4.75em 5.5em;
   grid-column-gap: 0;
@@ -3878,42 +3907,42 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   height: 1.5em;
   width: 71em;
 }
-.Header71 > .List71 { background-color: #e6f9ff; font-weight: bold;}
-.Header71 > .List71 > div { border-right: 1px solid #d6cdcd;}
-.Header71 > .List71 > div:nth-child(1) { text-align: left; padding-left: 2px;}
-.Header71 > .List71 > div:nth-child(2) { text-align: left; padding-left: 2px;}
-.Header71 > .List71 > div:nth-child(3) { grid-column: 3 / span 3;}
-.Header71 > .List71 > div:nth-child(4) { grid-column: 6 / span 3;}
-.Header71 > .List71 > div:nth-child(5) { grid-column: 9 / span 3;}
-.Header71 > .List71 > div:nth-child(6) { grid-column: 12 / span 3;}
-.Header71 > .List71 > div:nth-child(9) { grid-column: 17 / span 3;}
-.Header71 > .List71 > div:nth-child(10) { grid-column: 20 / span 3;}
-.Header71 > .List71 > div:nth-child(12) { border-right: 0;}
+.Header73 > .List73 { background-color: #e6f9ff; font-weight: bold;}
+.Header73 > .List73 > div { border-right: 1px solid #d6cdcd;}
+.Header73 > .List73 > div:nth-child(1) { text-align: left; padding-left: 2px;}
+.Header73 > .List73 > div:nth-child(2) { text-align: left; padding-left: 2px;}
+.Header73 > .List73 > div:nth-child(3) { grid-column: 3 / span 3;}
+.Header73 > .List73 > div:nth-child(4) { grid-column: 6 / span 3;}
+.Header73 > .List73 > div:nth-child(5) { grid-column: 9 / span 3;}
+.Header73 > .List73 > div:nth-child(6) { grid-column: 12 / span 3;}
+.Header73 > .List73 > div:nth-child(9) { grid-column: 17 / span 3;}
+.Header73 > .List73 > div:nth-child(10) { grid-column: 20 / span 3;}
+.Header73 > .List73 > div:nth-child(12) { border-right: 0;}
 
-.Table71 { margin-bottom: 0.5em;}
-.Table71 > .List71:nth-child(n) { background-color: #eeeeee;}
-.Table71 > .List71:nth-child(2n-1) { background-color: #ffffff;}
-.Table71 > .List71 > div:nth-child(1) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(2) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(3) { text-align: right;}
-.Table71 > .List71 > div:nth-child(5) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(6) { text-align: right;}
-.Table71 > .List71 > div:nth-child(8) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(9) { text-align: right;}
-.Table71 > .List71 > div:nth-child(11) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(12) { text-align: right;}
-.Table71 > .List71 > div:nth-child(14) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(15) { border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(16) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(17) { text-align: right;}
-.Table71 > .List71 > div:nth-child(19) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(20) { text-align: right;}
-.Table71 > .List71 > div:nth-child(22) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table71 > .List71 > div:nth-child(23) { text-align: right; padding-right: 5px; border-right: 1px solid #d6cdcd;}
+.Table73 { margin-bottom: 0.5em;}
+.Table73 > .List73:nth-child(n) { background-color: #eeeeee;}
+.Table73 > .List73:nth-child(2n-1) { background-color: #ffffff;}
+.Table73 > .List73 > div:nth-child(1) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(2) { text-align: left; padding-left: 2px; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(3) { text-align: right;}
+.Table73 > .List73 > div:nth-child(5) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(6) { text-align: right;}
+.Table73 > .List73 > div:nth-child(8) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(9) { text-align: right;}
+.Table73 > .List73 > div:nth-child(11) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(12) { text-align: right;}
+.Table73 > .List73 > div:nth-child(14) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(15) { border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(16) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(17) { text-align: right;}
+.Table73 > .List73 > div:nth-child(19) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(20) { text-align: right;}
+.Table73 > .List73 > div:nth-child(22) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table73 > .List73 > div:nth-child(23) { text-align: right; padding-right: 5px; border-right: 1px solid #d6cdcd;}
 
 
-/* 72 (tab-71sub02). 船艦->出場年代 */
-.List72 {
+/* 74 (tab-73sub02). 船艦->出場年代 */
+.List74 {
   display: grid;
   grid-template-columns: 3em 6em 3.5em 10em 10em 10em 10em 10em 10em 10em 10em;
   grid-column-gap: 0;
@@ -3924,32 +3953,32 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   line-height: 1.5em;
   height: 1.5em;
 }
-.Header72 > .List72 { height: 1.5em;}
-.Header72 > .List72 > div { border-right: 1px solid #d6cdcd; padding-left: 2px;}
-.Header72 > .List72 { background-color: #aaaaaa;}
+.Header74 > .List74 { height: 1.5em;}
+.Header74 > .List74 > div { border-right: 1px solid #d6cdcd; padding-left: 2px;}
+.Header74 > .List74 { background-color: #aaaaaa;}
 
-.Table72 { font-size: 12pt; overflow-y: scroll; height: var(--Table72Height);}
-.Table72 > .List72 { border-bottom: 1px solid #d6cdcd;}
-.Table72 > .List72:nth-child(n) { background-color: #eeeeee;}
-.Table72 > .List72:nth-child(2n-1) { background-color: #ffffff;}
-.Table72 > .List72 > div { border-right: 1px solid #d6cdcd;}
-.Table72 > .List72 > div:nth-child(1) { text-align: right; padding-right: 8px;}
-.Table72 > .List72 > div:nth-child(2) { text-align: left; padding-left: 2px;}
-.Table72 > .List72 > .c1 { background-color: #da7070;}
-.Table72 > .List72 > .c2 { background-color: #da60a0;}
+.Table74 { font-size: 12pt; overflow-y: scroll; height: var(--Table74Height);}
+.Table74 > .List74 { border-bottom: 1px solid #d6cdcd;}
+.Table74 > .List74:nth-child(n) { background-color: #eeeeee;}
+.Table74 > .List74:nth-child(2n-1) { background-color: #ffffff;}
+.Table74 > .List74 > div { border-right: 1px solid #d6cdcd;}
+.Table74 > .List74 > div:nth-child(1) { text-align: right; padding-right: 8px;}
+.Table74 > .List74 > div:nth-child(2) { text-align: left; padding-left: 2px;}
+.Table74 > .List74 > .c1 { background-color: #da7070;}
+.Table74 > .List74 > .c2 { background-color: #da60a0;}
 
-.Table72 > .List72a > div:nth-child(4) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(5) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(6) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(7) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(8) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(9) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(10) { background-color: #777777;}
-.Table72 > .List72a > div:nth-child(11) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(4) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(5) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(6) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(7) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(8) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(9) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(10) { background-color: #777777;}
+.Table74 > .List74a > div:nth-child(11) { background-color: #777777;}
 
 
-/* 73 (tab-71sub03). 船艦->船艦改造 */
-.List73 {
+/* 75 (tab-73sub03). 船艦->船艦改造 */
+.List75 {
   display: grid;
   grid-template-columns: 6em 12em 12em 24em;
   grid-column-gap: 0;
@@ -3961,16 +3990,16 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   height: 1.5em;
   width: 54em;
 }
-.Table73 { margin-bottom: 0.5em;}
-.Table73 > .List73:nth-child(n) { background-color: #eeeeee;}
-.Table73 > .List73:nth-child(2n-1) { background-color: #ffffff;}
-.Table73 > .List73:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
-.Table73 > .List73 > div { padding-left: 3px;}
-.Table73 > .List73 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
-.Table73 > .List73 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
-.Table73 > .List73 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
+.Table75 { margin-bottom: 0.5em;}
+.Table75 > .List75:nth-child(n) { background-color: #eeeeee;}
+.Table75 > .List75:nth-child(2n-1) { background-color: #ffffff;}
+.Table75 > .List75:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
+.Table75 > .List75 > div { padding-left: 3px;}
+.Table75 > .List75 > div:nth-child(1) { border-right: 1px solid #d6cdcd;}
+.Table75 > .List75 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
+.Table75 > .List75 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
 
-.List73a {
+.List75a {
   display: grid;
   grid-template-columns: 5em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em;
   grid-column-gap: 0;
@@ -3982,20 +4011,20 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   height: 1.5em;
   width: 83em;
 }
-.Table73a { margin-bottom: 0.5em;}
-.Table73a > .List73a:nth-child(1) > div { text-align: left;}
-.Table73a > .List73a:nth-child(2) > div { text-align: center;}
-.Table73a > .List73a { background-color: #eeeeee;}
-.Table73a > .List73a > div { padding-right: 4px;}
-.Table73a > .List73a > div:nth-child(n) { background-color: #ffffff;}
-.Table73a > .List73a > div:nth-child(2n-1) { background-color: #eeeeee;}
-.Table73a > .List73a > div:nth-child(1) { background-color: #eeeeee; text-align: left; padding-left: 2px;}
+.Table75a { margin-bottom: 0.5em;}
+.Table75a > .List75a:nth-child(1) > div { text-align: left;}
+.Table75a > .List75a:nth-child(2) > div { text-align: center;}
+.Table75a > .List75a { background-color: #eeeeee;}
+.Table75a > .List75a > div { padding-right: 4px;}
+.Table75a > .List75a > div:nth-child(n) { background-color: #ffffff;}
+.Table75a > .List75a > div:nth-child(2n-1) { background-color: #eeeeee;}
+.Table75a > .List75a > div:nth-child(1) { background-color: #eeeeee; text-align: left; padding-left: 2px;}
 
 
-/* 74 (tab-71sub04). 船艦->大砲種類 */
-.List74 {
+/* 76 (tab-73sub04). 船艦->大砲種類 */
+.List76 {
   display: grid;
-  grid-template-columns: 4em 4.5em 3em 11em;
+  grid-template-columns: 4em 4.5em 3em 3em;
   grid-column-gap: 0;
   padding-left: 2px;
   border: 1px solid #d6cdcd;
@@ -4003,21 +4032,21 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   text-align: left;
   line-height: 1.5em;
   height: 1.5em;
-  width: 23em;
+  width: 15em;
 }
-.Table74 { margin-bottom: 0.5em;}
-.Table74 > .List74:nth-child(n) { background-color: #ffffff;}
-.Table74 > .List74:nth-child(2n-1) { background-color: #eeeeee;}
-.Table74 > .List74:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
-.Table74 > .List74 > div:nth-child(1) { padding-left: 2px; border-right: 1px solid #d6cdcd;}
-.Table74 > .List74 > div:nth-child(2) { padding-right: 5px; text-align: right; border-right: 1px solid #d6cdcd;}
-.Table74 > .List74 > div:nth-child(3) { text-align: center; border-right: 1px solid #d6cdcd;}
-.Table74 > .List74 > div:nth-child(4) { padding-left: 3px;}
-.Table74 > .List74:nth-child(1) > div:nth-child(2) { text-align: center;}
+.Table76 { margin-bottom: 0.5em;}
+.Table76 > .List76:nth-child(n) { background-color: #ffffff;}
+.Table76 > .List76:nth-child(2n-1) { background-color: #eeeeee;}
+.Table76 > .List76:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
+.Table76 > .List76 > div:nth-child(1) { padding-left: 2px; border-right: 1px solid #d6cdcd;}
+.Table76 > .List76 > div:nth-child(2) { padding-right: 5px; text-align: right; border-right: 1px solid #d6cdcd;}
+.Table76 > .List76 > div:nth-child(3) { text-align: center; border-right: 1px solid #d6cdcd;}
+.Table76 > .List76 > div:nth-child(4) { text-align: center; padding-left: 3px;}
+.Table76 > .List76:nth-child(1) > div:nth-child(2) { text-align: center;}
 
 
-/* 75 (tab-71sub05). 船艦->船首像 */
-.List75 {
+/* 77 (tab-73sub05). 船艦->船首像 */
+.List77 {
   display: grid;
   grid-template-columns: 2em 9em 3em 3em 9em 36em;
   grid-column-gap: 0;
@@ -4028,20 +4057,20 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   line-height: 1.5em;
   width: 62em;
 }
-.Table75 { margin-bottom: 0.5em;}
-.Table75 > .List75:nth-child(n) { background-color: #ffffff;}
-.Table75 > .List75:nth-child(2n-1) { background-color: #eeeeee;}
-.Table75 > .List75:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
-.Table75 > .List75 > div:nth-child(1) { border-right: 1px solid #d6cdcd; text-align: right; padding-right: 3px;}
-.Table75 > .List75 > div:nth-child(2) { border-right: 1px solid #d6cdcd; padding-left: 4px;}
-.Table75 > .List75 > div:nth-child(3) { border-right: 1px solid #d6cdcd; text-align: center;}
-.Table75 > .List75 > div:nth-child(4) { border-right: 1px solid #d6cdcd; text-align: center;}
-.Table75 > .List75 > div:nth-child(5) { border-right: 1px solid #d6cdcd; padding-left: 4px;}
-.Table75 > .List75 > div:nth-child(6) { padding-left: 4px;}
+.Table77 { margin-bottom: 0.5em;}
+.Table77 > .List77:nth-child(n) { background-color: #ffffff;}
+.Table77 > .List77:nth-child(2n-1) { background-color: #eeeeee;}
+.Table77 > .List77:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
+.Table77 > .List77 > div:nth-child(1) { border-right: 1px solid #d6cdcd; text-align: right; padding-right: 3px;}
+.Table77 > .List77 > div:nth-child(2) { border-right: 1px solid #d6cdcd; padding-left: 4px;}
+.Table77 > .List77 > div:nth-child(3) { border-right: 1px solid #d6cdcd; text-align: center;}
+.Table77 > .List77 > div:nth-child(4) { border-right: 1px solid #d6cdcd; text-align: center;}
+.Table77 > .List77 > div:nth-child(5) { border-right: 1px solid #d6cdcd; padding-left: 4px;}
+.Table77 > .List77 > div:nth-child(6) { padding-left: 4px;}
 
 
-/* 76 (tab-71sub06). 船艦->船艦動畫 */
-.Table76 {
+/* 76 (tab-73sub06). 船艦->船艦動畫 */
+.Table78 {
   display: grid;
   grid-template-columns: 240px 240px 240px 240px;
   grid-column-gap: 6px;
@@ -4050,14 +4079,19 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   padding: 5px;
   margin: 10px 0 0 10px;
 }
-.Table76 img { width: 240px;}
-.Table76 > div > div:nth-child(2) { padding: 3px; background-color: #d4f1f4; font-size: 12pt; text-align: center;}
+.Table78 img { width: 240px;}
+.Table78 > div > div:nth-child(2) { padding: 3px; background-color: #d4f1f4; font-size: 12pt; text-align: center;}
 
 
-/* 77 (tab-71sub09). 船艦->船隻介紹 */
-#tab-71sub09 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
-#tab-71sub09 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
-.List77 {
+/* 79 (tab-25sub07). 船艦->造船廠對話 */
+#tab-73sub07 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
+#tab-73sub07 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
+
+
+/* 80 (tab-73sub09). 船艦->船隻介紹 */
+#tab-73sub09 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-73sub09 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+.List80 {
   display: grid;
   grid-template-columns: 6em 8em 10em 10em;
   grid-column-gap: 0;
@@ -4069,18 +4103,18 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   height: 1.5em;
   width: 34em;
 }
-.Table77 { margin-bottom: 0.5em;}
-.Table77 > .List77:nth-child(n) { background-color: #ffffff;}
-.Table77 > .List77:nth-child(2n-1) { background-color: #eeeeee;}
-.Table77 > .List77:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
-.Table77 > .List77 > div { padding-left: 4px;}
-.Table77 > .List77 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
-.Table77 > .List77 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
+.Table80 { margin-bottom: 0.5em;}
+.Table80 > .List80:nth-child(n) { background-color: #ffffff;}
+.Table80 > .List80:nth-child(2n-1) { background-color: #eeeeee;}
+.Table80 > .List80:nth-child(1) { background-color: #e6f9ff; font-weight: bold;}
+.Table80 > .List80 > div { padding-left: 4px;}
+.Table80 > .List80 > div:nth-child(2) { border-right: 1px solid #d6cdcd;}
+.Table80 > .List80 > div:nth-child(3) { border-right: 1px solid #d6cdcd;}
 
 
 /* ------------------------------ */
-/* 79 (tab-79sub01). 迷你遊戲->聖杯之謎 */
-.List79 {
+/* 81 (tab-81sub01). 迷你遊戲->聖杯之謎 */
+.List81 {
   display: grid;
   grid-template-columns: 3em 18em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em 3em;
   grid-column-gap: 0;
@@ -4090,20 +4124,20 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   border: 1px solid #d6cdcd;
   width: 60em;
 }
-.Table79 .colorA { background-color: #7CFC00;}
-.Table79 .colorB { background-color: #FFFF00;}
-.Table79 .colorC { background-color: #40E0D0;}
-.Table79 > .List79 > div:nth-child(2) { text-align: left; border-right: 1px solid #d6cdcd;}
-.Table79 > .List79 > div:nth-child(5) { border-right: 1px solid #d6cdcd;}
+.Table81 .colorA { background-color: #7CFC00;}
+.Table81 .colorB { background-color: #FFFF00;}
+.Table81 .colorC { background-color: #40E0D0;}
+.Table81 > .List81 > div:nth-child(2) { text-align: left; border-right: 1px solid #d6cdcd;}
+.Table81 > .List81 > div:nth-child(5) { border-right: 1px solid #d6cdcd;}
 
-.Header79 > .List79 { background-color: #aaaaaa;}
-.Header79 > .List79 > div:nth-child(1) { border-right: 1px solid #d6cdcd; grid-column: 1 / span 2;}
-.Header79 > .List79 > div:nth-child(2) { border-right: 1px solid #d6cdcd; grid-column: 3 / span 3;}
-.Header79 > .List79 > div:nth-child(3) { grid-column: 6 / span 10;}
+.Header81 > .List81 { background-color: #aaaaaa;}
+.Header81 > .List81 > div:nth-child(1) { border-right: 1px solid #d6cdcd; grid-column: 1 / span 2;}
+.Header81 > .List81 > div:nth-child(2) { border-right: 1px solid #d6cdcd; grid-column: 3 / span 3;}
+.Header81 > .List81 > div:nth-child(3) { grid-column: 6 / span 10;}
 
 
-/* 80 (tab-80sub06). 迷你遊戲->婆羅門塔之謎 */
-.Table80 {
+/* 82 (tab-81sub06). 迷你遊戲->婆羅門塔之謎 */
+.Table82 {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   grid-column-gap: 0;
@@ -4113,9 +4147,19 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   border: 1px solid #d6cdcd;
   width: 1200px;
 }
-.Table80 img { width: 100%;}
-.Table80 > div { border-bottom: 1px solid #d6cdcd; padding: 4px;}
-.Table80 > .border-R { border-right: 1px solid #d6cdcd;}
+.Table82 img { width: 100%;}
+.Table82 > div { border-bottom: 1px solid #d6cdcd; padding: 4px;}
+.Table82 > .border-R { border-right: 1px solid #d6cdcd;}
+
+
+/* ------------------------------ */
+/* 83 (tab-83). 妻小 */
+#tab-83sub01 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-83sub01 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+#tab-83sub02 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-83sub02 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
+#tab-83sub03 + label + .subTab-content > .subTab-split > .split-menu { width: 5.5em;}
+#tab-83sub03 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 5.5em;}
 
 
 /* ------------------------------ */
@@ -4246,6 +4290,11 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
   padding: 0;
   margin: 0;
 }
+
+
+/* 88 (tab-84sub08). 其他->生命力過低 */
+#tab-84sub08 + label + .subTab-content > .subTab-split > .split-menu { width: 6.5em;}
+#tab-84sub08 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 6.5em;}
 
 
 /* ------------------------------ */
