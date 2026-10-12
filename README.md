@@ -45,7 +45,7 @@
   <tr><td>pic/r2-1/</td><td>　遊戲紀錄截圖（02）part 1</td></tr>
   <tr><td>pic/r2-2/</td><td>　遊戲紀錄截圖（02）part 2</td></tr>
   <tr><td>pic/r2-3/</td><td>　遊戲紀錄截圖（02）part 3</td></tr>
-  <tr><td>pic/r2-3/</td><td>　遊戲紀錄截圖（02）part 4</td></tr>
+  <tr><td>pic/r2-4/</td><td>　遊戲紀錄截圖（02）part 4</td></tr>
   <tr><td>pic/s/</td><td>　船隻介紹的附圖</td></tr>
   <tr><td>pic/sea2/</td><td>　大航海時代二相關角色頭像</td></tr>
   <tr><td>pic/t/</td><td>　物品圖片</td></tr>
