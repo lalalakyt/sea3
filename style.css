@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/10/10"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/10/12"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -3885,12 +3885,15 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 /* 71 (tab-71sub01). 探險->出港/出城 */
 /* 71 (tab-71sub02). 探險->進港/進城 */
 /* 71 (tab-71sub03). 探險->登陸 */
+/* 71 (tab-71sub04). 探險->極地 */
 #tab-71sub01 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
 #tab-71sub01 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
 #tab-71sub02 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
 #tab-71sub02 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
 #tab-71sub03 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
 #tab-71sub03 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
+#tab-71sub04 + label + .subTab-content > .subTab-split > .split-menu { width: 9.5em;}
+#tab-71sub04 + label + .subTab-content > .subTab-split > .split-menu .split-content { left: 9.5em;}
 
 
 /* ------------------------------ */
