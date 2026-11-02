@@ -1,6 +1,6 @@
 /* CSS Variables for page/table height, if want to change the page height, just change the variables here. */
 :root {
-  --lastUpdateDate: "2026/10/12"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
+  --lastUpdateDate: "2026/11/02"; /* 最後更新日期要在這裡變更，這樣可以同時顯示在多個 html 上（若有需求） */
   
   --mainTabHeight: 683px;   /* mainTab */
   --subTabHeight:  651px;   /* subTab */
@@ -323,14 +323,14 @@ p { padding: 0 0.25em 0 0; margin: 0.25em 0 0 0;}
 
 /* F-2. 預設：關 */
 .openDiv { display: none;}
-.openDiv:checked + div > label > span:nth-of-type(1) { display: none;}
-.openDiv:not(:checked) + div > label > span:nth-of-type(2) { display: none;}
+.openDiv:checked + div label > span:nth-of-type(1) { display: none;}
+.openDiv:not(:checked) + div label > span:nth-of-type(2) { display: none;}
 .openDiv:not(:checked) + div + div { display: none;}
 
 /* F-3. 預設：開 */
 .openDiv2 { display: none;}
-.openDiv2:not(:checked)  + div > label > span:nth-of-type(1) { display: none;}
-.openDiv2:checked + div > label > span:nth-of-type(2) { display: none;}
+.openDiv2:not(:checked) + div label > span:nth-of-type(1) { display: none;}
+.openDiv2:checked + div label > span:nth-of-type(2) { display: none;}
 .openDiv2:checked + div + div { display: none;}
 
 
@@ -4405,43 +4405,44 @@ input[name="Filter47"]:checked ~ .Table47 > div { display: none;}
 .List94hr { grid-template-columns: 99.2em;}
 .List94hr > div { border-bottom: 1px solid #d6cdcd;}
 
-.Header94 > .List94 { height: 1.5em; background-color: #aaaaaa;}
-.Header94 > .List94 > div { padding-left: 2px; border-right: 1px solid #d6cdcd;}
-.Header94 > .List94 > div:nth-child(4) { grid-column: 4 / span 2;}
-.Header94 > .List94 > div:nth-child(5) { grid-column: 6 / span 3;}
+.Header94 .List94 { height: 1.5em; background-color: #aaaaaa;}
+.Header94 .List94 > div { padding-left: 2px; border-right: 1px solid #d6cdcd;}
+.Header94 .List94 > div:nth-child(4) { grid-column: 4 / span 2;}
+.Header94 .List94 > div:nth-child(5) { grid-column: 6 / span 3;}
 
 .Table94 { font-size: 12pt; overflow-y: scroll; height: var(--Table94Height);}
-.Table94 > .List94 > div { border-right: 1px solid #d6cdcd; text-align: right; padding-right: 2px;}
-.Table94 > .List94 > div:nth-child(1) { text-align: center; padding: 0;}
-.Table94 > .List94 > div:nth-child(2) { text-align: left; padding-left: 2px; padding-right: 0;}
-.Table94 > .List94 > div:nth-child(3) { text-align: left; padding-left: 1px; padding-right: 0;}
-.Table94 > .List94 > div:nth-child(4) { text-align: left; padding-left: 2px; padding-right: 3px; border-right: 0;}
-.Table94 > .List94 > div:nth-child(5) { text-align: right; padding: 0 2px 0 2px;}
+.Table94 .List94 > div { border-right: 1px solid #d6cdcd; text-align: right; padding-right: 2px;}
+.Table94 .List94 > div:nth-child(1) { text-align: center; padding: 0;}
+.Table94 .List94 > div:nth-child(2) { text-align: left; padding-left: 2px; padding-right: 0;}
+.Table94 .List94 > div:nth-child(3) { text-align: left; padding-left: 1px; padding-right: 0;}
+.Table94 .List94 > div:nth-child(4) { text-align: left; padding-left: 2px; padding-right: 3px; border-right: 0;}
+.Table94 .List94 > div:nth-child(5) { text-align: right; padding: 0 2px 0 2px;}
 
-.Table94 > .List94[lineFilter~="A"] > div:nth-child(1) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="B"] > div:nth-child(2) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="C"] > div:nth-child(3) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(4) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(5) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(6) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(7) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(8) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(9) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(10) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(11) { border-bottom: 1px solid #d6cdcd;}
-.Table94 > .List94[lineFilter~="D"] > div:nth-child(12) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="A"] > div:nth-child(1) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="B"] > div:nth-child(2) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="C"] > div:nth-child(3) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(4) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(5) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(6) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(7) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(8) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(9) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(10) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(11) { border-bottom: 1px solid #d6cdcd;}
+.Table94 .List94[lineFilter~="D"] > div:nth-child(12) { border-bottom: 1px solid #d6cdcd;}
 
-.Table94 > .List94[colorFilter="A"] { background-color: #e0f7fa;}
-.Table94 > .List94[colorFilter="B"] { background-color: #e8f5e9;}
-.Table94 > .List94[colorFilter="C"] { background-color: #ffe4e1;}
+.Table94 .List94[colorFilter="A"] { background-color: #e0f7fa;}
+.Table94 .List94[colorFilter="B"] { background-color: #e8f5e9;}
+.Table94 .List94[colorFilter="C"] { background-color: #ffe4e1;}
 
-.Table94 > .List94a { background-color: #ffe4e1;}
-.Table94 > .List94a > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
+.Table94 .List94a { background-color: #ffe4e1;}
+.Table94 .List94a > div:nth-child(3) { text-align: right; padding-right: 5px;}
+.Table94 .List94a > div:nth-child(4) { border-right: 1px solid #d6cdcd;}
 
-.Table94 > .List94b > div:nth-child(4) { text-align: left; padding: 0;}
-.Table94 > .List94b > div:nth-child(5) { grid-column: 5 / span 7;}
+.Table94 .List94b > div:nth-child(4) { text-align: left; padding: 0;}
+.Table94 .List94b > div:nth-child(5) { grid-column: 5 / span 7;}
 
-.Table94 > .List94c > div:nth-child(1) { grid-column: 1 / span 12; text-align: left;}
+.Table94 .List94c > div:nth-child(1) { grid-column: 1 / span 12; text-align: left;}
 
 .Table94 .c1 { color: #f57f17;}  /*角色、技能*/
 .Table94 .c2 { color: red;}      /*物品*/
